@@ -1,4 +1,6 @@
-## Extensions
+## Les extensions
+
+**`_<NOM_DU_COMPOSANT>_extension.scss`**
 
 Il est possible d'étendre les fonctionnalités du composant en ajoutant simplement un point d'entrée avec une déclaration `$briks-components-generic` à la typologie identique mais avec des propriétés par défaut et des modifieurs qui surchargent ou ajoutent des propriétés CSS.
 
