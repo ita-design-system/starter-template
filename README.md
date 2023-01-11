@@ -1,6 +1,6 @@
 # starter-template
 
-Template de démarrage pour la documentation, les templates et la génération du CSS. Ce dépôt est un clone de [Jekyll LibDoc](https://olivier3lanc.github.io/Jekyll-LibDoc/) personnalisé pour ITADS.
+Point de départ pour tout nouveau projet web utilisant le système de design de IT Automotive. Ce dépôt est un clone de [Jekyll LibDoc](https://olivier3lanc.github.io/Jekyll-LibDoc/) personnalisé pour ITADS.
 
 ```mermaid
 classDiagram
@@ -77,6 +77,13 @@ classDiagram
 
 * **Créer les templates** du projet avec son environnement complet (générique + personnalisé) du système de design IT Automotive.
 * **Créer la documentation des extensions de composants**, la documentation qui n'est pas incluse dans la documentation des composants génériques.
+
+## Codespaces
+
+Ce projet peut être développé avec Github codespaces
+
+<img width="453" alt="image" src="https://user-images.githubusercontent.com/13103047/211783775-55d429ec-45c6-4015-8cd4-6321dc041913.png">
+
 
 ## Installation locale avec Jekyll LibDoc distant
 
