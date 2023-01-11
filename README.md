@@ -26,11 +26,11 @@ classDiagram
         Générateur documentation
     }
     class Project_Documentation {
-        /content
+        /content/doc
         Fichiers markdown ou html
     }
     class Templates {
-        /templates
+        /content/templates
         Fichiers html Liquid
     }
     class Components_Extensions {
@@ -67,7 +67,7 @@ classDiagram
         shadows
     }
     class UI_Files {
-        /css/project.scss
+        /css/nom_du_projet.scss
         /img
         /js
     }
