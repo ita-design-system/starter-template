@@ -2,8 +2,7 @@
 ---
 /*
     POINT D'ENTRÉE BRIKS
-    Nom du fichier à renommer
-    Placer le chemin du fichier renommé dans le fichier _config.yml de LibDoc
+    Placer le chemin du fichier dans le fichier _config.yml de LibDoc
 */
 
 /*
@@ -15,7 +14,7 @@
 @import 'briks/core';
 /*
     DESIGN TOKENS
-    Fichier SASS contenant les design tokens de briks
+    Fichier SASS contenant les design tokens du projet
 */
 @import 'briks/settings/tokens/generic';
 /*
@@ -31,21 +30,13 @@
 */
 @import 'briks/fonts';
 /*
-    COMPOSANTS GÉNÉRIQUES
+    CONFIGURATION C-FLEX GENERIQUE
     Requiert briks/_core.scss
-    Imports des fichiers de configurations des composants génériques.
-    Ces fichiers sont présents dans le dépôt
+    Imports du fichier de configuration c-flex.
+    Les fichiers SASS composants générique sont présents dans le dépôt
     https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks
 */
 @import 'briks/flex_generic';
-/*
-    EXTENSIONS
-    Requiert briks/_core.scss
-    Imports des fichiers de configurations des extensions de composants.
-    Ces fichiers doivent être placés dans ce dépôt dans le répertoire _sass
-*/
-@import 'flex_extension';
-
 /*
     GÉNÉRATEUR DE COMPOSANTS
     Requiert  briks/_core.scss

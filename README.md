@@ -67,7 +67,7 @@ classDiagram
         shadows
     }
     class UI_Files {
-        /css/nom_du_projet.scss
+        /css
         /img
         /js
     }
@@ -106,69 +106,16 @@ Ce projet peut être développé avec Github codespaces
 
 ## Démarrage
 
-Le starter-template contient l'arborescence des fichiers compilés:
+Le starter-template contient l'arborescence des fichiers:
 
 ```
 ui/
 ├── css/
-│   └── briks.scss (point d'entrée)
+│   ├── briks_css_variables.scss
+│   ├── briks_fonts.scss
+│   ├── briks_flex_generic.scss
+│   └── briks_flex_extension.scss
 ├── img
 └── js
 ```
 
-Les fichiers de composants génériques se trouvent dans le dépôt [jekyll-libdoc/_sass/briks](https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks)
-
-Le point d'entrée SASS est le suivant [ui/css/briks.scss](ui/css/briks.scss)
-
-```scss
-/*
-    POINT D'ENTRÉE BRIKS
-*/
-
-/*
-    CORE
-    Fonctionnalités principales 
-    Inclure briks/_core.scss pour obtenir les fonctions helpers et les mixins.
-    Aucune déclaration CSS n'est générée à partir de ce fichier.
-*/
-@import 'briks/core';
-/*
-    DESIGN TOKENS
-    Fichier SASS contenant les design tokens de briks
-*/
-@import 'briks/settings/tokens/generic';
-/*
-    CSS VARIABLES
-    Requiert briks/_core.scss
-    Ce fichier génère les variables CSS de briks
-*/
-@import 'briks/css-vars';
-/*
-    FONTS
-    Requiert briks/_core.scss
-    Génère les déclarations CSS nécéssaires pour l'usage des typos
-*/
-@import 'briks/fonts';
-/*
-    COMPOSANTS GÉNÉRIQUES
-    Requiert briks/_core.scss
-    Imports des fichiers de configurations des composants génériques.
-    Ces fichiers sont présents dans le dépôt
-    https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks
-*/
-@import 'briks/flex_generic';
-/*
-    EXTENSIONS
-    Requiert briks/_core.scss
-    Imports des fichiers de configurations des extensions de composants.
-    Ces fichiers doivent être placés dans ce dépôt dans le répertoire _sass
-*/
-@import 'flex_extension';
-
-/*
-    GÉNÉRATEUR DE COMPOSANTS
-    Requiert  briks/_core.scss
-    Génère toutes les déclarations CSS des composants
-*/
-@import 'briks/components';
-```

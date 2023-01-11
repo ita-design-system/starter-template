@@ -1,0 +1,41 @@
+---
+---
+/*
+    POINT D'ENTRÉE EXTENSION FLEX DE BRIKS
+    Placer le chemin du fichier dans le fichier _config.yml de LibDoc
+*/
+
+/*
+    CORE
+    Fonctionnalités principales 
+    Inclure briks/_core.scss pour obtenir les fonctions helpers et les mixins.
+    Aucune déclaration CSS n'est générée à partir de ce fichier.
+*/
+@import 'briks/core';
+/*
+    DESIGN TOKENS
+    Fichier SASS contenant les design tokens du projet
+*/
+@import 'briks/settings/tokens/generic';
+/*
+    COMPOSANTS GÉNÉRIQUES
+    Requiert briks/_core.scss
+    Imports des fichiers de configurations des composants génériques.
+    Ces fichiers sont présents dans le dépôt
+    https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks
+*/
+@import 'briks/flex_generic';
+/*
+    CONFIGURATION DE L'EXTENSION DU COMPOSANT C-FLEX
+    Requiert briks/_core.scss
+    Imports du fichier de configuration c-flex.
+    Le fichiers SASS de l'extension est dans le répertoire _sass de ce dépôt
+*/
+@import 'flex_extension';
+
+/*
+    GÉNÉRATEUR DE COMPOSANTS
+    Requiert  briks/_core.scss
+    Génère toutes les déclarations CSS des composants
+*/
+@import 'briks/components';
