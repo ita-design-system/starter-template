@@ -1,6 +1,6 @@
 # starter-template
 
-Template de démarrage pour la documentation, les templates et la génération du CSS. Ce dépôt est un clone de [Jekyll LibDoc](https://github.com/olivier3lanc/Jekyll-LibDoc) personnalisé pour ITADS.
+Template de démarrage pour la documentation, les templates et la génération du CSS. Ce dépôt est un clone de [Jekyll LibDoc](https://olivier3lanc.github.io/Jekyll-LibDoc/) personnalisé pour ITADS.
 
 ## Rôle du starter-template
 
