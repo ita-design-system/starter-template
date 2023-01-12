@@ -18,14 +18,6 @@
 */
 @import 'briks/settings/tokens/generic';
 /*
-    COMPOSANTS GÉNÉRIQUES
-    Requiert briks/_core.scss
-    Imports des fichiers de configurations des composants génériques.
-    Ces fichiers sont présents dans le dépôt
-    https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks
-*/
-@import 'briks/flex_generic';
-/*
     CONFIGURATION DE L'EXTENSION DU COMPOSANT C-FLEX
     Requiert briks/_core.scss
     Imports du fichier de configuration c-flex.

@@ -18,18 +18,6 @@
 */
 @import 'briks/settings/tokens/generic';
 /*
-    CSS VARIABLES
-    Requiert briks/_core.scss
-    Ce fichier génère les variables CSS de briks
-*/
-@import 'briks/css-vars';
-/*
-    FONTS
-    Requiert briks/_core.scss
-    Génère les déclarations CSS nécéssaires pour l'usage des typos
-*/
-@import 'briks/fonts';
-/*
     CONFIGURATION C-FLEX GENERIQUE
     Requiert briks/_core.scss
     Imports du fichier de configuration c-flex.
