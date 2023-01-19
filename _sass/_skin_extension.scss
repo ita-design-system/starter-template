@@ -1,0 +1,51 @@
+/*
+    C-SKIN EXTENSION
+    Extension du composant générique c-skin
+    https://github.com/ita-design-system/c-skin.scss
+    Ce fichier doit servir à étendre ou surcharger les fonctionnalités
+    du composant c-dim selon les besoins du projet
+*/
+$briks-components-generic: (
+    // Nom du composant, obligatoirement skin
+    skin: ( 
+        // Extension activée true ou false
+        enabled: true, 
+        // Responsive activée true ou false pour l'extension
+        responsive: false, 
+        // Valeurs par défaut de l'extension
+        defaults: (
+            pseudo-classes: (
+
+                // c-skin:disabled
+                disabled: (
+                    pointer-events: none,
+                    color: grey,
+                    background-color: yellow
+                )
+            )
+        ),
+        // Liste des modifieurs contenant chacun une liste de propriétés qui 
+        // soit surchargent les propriétés par défaut
+        // soit ajoutent des propriétés
+        // soit les deux
+        modifiers: ( 
+            // c-skin m-scheme-1
+            scheme-1: (
+                background-color: my-color(primary-500),
+                color: my-color(neutral-900),
+                pseudo-classes: (
+                    hover: (
+                        background-color: my-color(primary-700),
+                        color: my-color(neutral-900),
+                    )
+                )
+            ),
+            // c-skin m-disabled
+            disabled: (
+                pointer-events: none,
+                color: grey,
+                background-color: lightgrey
+            )
+        )
+    )
+);

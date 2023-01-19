@@ -18,12 +18,12 @@
 */
 @import 'briks/settings/tokens/generic';
 /*
-    CONFIGURATION DE L'EXTENSION DU COMPOSANT C-FLEX
+    CONFIGURATION DE L'EXTENSION DU COMPOSANT C-DIM
     Requiert briks/_core.scss
-    Imports du fichier de configuration c-flex.
+    Imports du fichier de configuration c-dim.
     Le fichiers SASS de l'extension est dans le répertoire _sass de ce dépôt
 */
-@import 'flex_extension';
+@import 'dim_extension';
 
 /*
     GÉNÉRATEUR DE COMPOSANTS
