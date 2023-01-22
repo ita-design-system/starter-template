@@ -19,100 +19,62 @@ $briks-components-generic: (
         // soit ajoutent des propriétés
         // soit les deux
         modifiers: ( 
-            //Font-size
-            // Surcharge de la variable CSS --ita-fs pour compatibilité avec c-txt
-            fs-1: (
-                font-size:8
-            ),
-            fs-2: (
-                font-size:10
-            ),
-            fs-3: (
-                font-size:12
-            ),
-            fs-4: (
-                font-size:14
-            ),
-            fs-5: (
-                font-size:16
-            ),
-            fs-6: (
-                font-size:18
-            ),
-            fs-7: (
-                font-size:20
-            ),
-            fs-8: (
-                font-size:24
-            ),
-            fs-9: (
-                font-size:28
-            ),
-            fs-10: (
-                font-size:32
-            ),
-            fs-11: (
-                font-size:36
+            // FONT SIZE
+            fs-13: (
+                font-size: my-font-size(13)
             ),
             fs-12: (
-                font-size:42
+                font-size: my-font-size(12)
             ),
-            fs-13: (
-                font-size:48
+            fs-11: (
+                font-size: my-font-size(11)
             ),
-            fs-14: (
-                font-size:54
+            fs-10: (
+                font-size: my-font-size(10)
+            ),
+            fs-9: (
+                font-size: my-font-size(9)
+            ),
+            fs-8: (
+                font-size: my-font-size(8)
+            ),
+            fs-7: (
+                font-size: my-font-size(7)
+            ),
+            fs-6: (
+                font-size: my-font-size(6)
+            ),
+            fs-5: (
+                font-size: my-font-size(5)
+            ),
+            fs-4: (
+                font-size: my-font-size(4)
+            ),
+            fs-3: (
+                font-size: my-font-size(3)
+            ),
+            fs-2: (
+                font-size: my-font-size(2)
+            ),
+            fs-1: (
+                font-size: my-font-size(1)
+            ),
+            // FONT FAMILIES
+            ff-lead-700: (
+                font-family: my-font-family(lead-700),
+                font-weight: 700
+            ),
+            ff-lead-600: (
+                font-family: my-font-family(lead-600),
+                font-weight: 600
+            ),
+            ff-lead-400: (
+                font-family: my-font-family(lead-400),
+                font-weight: 400
+            ),
+            ff-mono: (
+                font-family: my-font-family(mono)
             )
-            fs-15: (
-                font-size:60
-            ),
-        //Font-weight
-            fw-1: (
-                font-weight:100
-            ),
-            fw-2: (
-                font-weight:200
-            ),
-            fw-3: (
-                font-weight:300
-            ),
-            fw-4: (
-                font-weight:400 //normal
-            ),
-            fw-5: (
-                font-weight:500
-            ),
-            fw-6: (
-                font-weight:600
-            ),
-            fw-7: (
-                font-weight:700 //bold
-            ),
-            fw-8: (
-                font-weight:800
-            ),
-            fw-9: (
-                font-weight:900
-            ),
-        //Font-family
-            ff-lead-1:(
-                font-family:''
-            ),
-            ff-lead-2:(
-                font-family:''
-            ),
-            ff-lead-3:(
-                font-family:''
-            ),
-            ff-lead-4:(
-                font-family:''
-                ),
-            ff-lead-5:(
-                font-family:''
-            ),
-            ff-lead-6:(
-                font-family:''
-            ),
         )
     )
 );

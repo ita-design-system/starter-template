@@ -45,7 +45,279 @@ $briks-components-generic: (
                 pointer-events: none,
                 color: grey,
                 background-color: lightgrey
-            )
+            ),
+            // COLORS
+            c-primary-100: (
+                color: my-color(primary-100)
+            ),
+            c-primary-200: (
+                color: my-color(primary-200)
+            ),
+            c-primary-300: (
+                color: my-color(primary-300)
+            ),
+            c-primary-400: (
+                color: my-color(primary-400)
+            ),
+            c-primary-500: (
+                color: my-color(primary-500)
+            ),
+            c-primary-600: (
+                color: my-color(primary-600)
+            ),
+            c-primary-700: (
+                color: my-color(primary-700)
+            ),
+            c-primary-800: (
+                color: my-color(primary-800)
+            ),
+            c-primary-900: (
+                color: my-color(primary-900)
+            ),
+            c-neutral-100: (
+                color: my-color(neutral-100)
+            ),
+            c-neutral-200: (
+                color: my-color(neutral-200)
+            ),
+            c-neutral-300: (
+                color: my-color(neutral-300)
+            ),
+            c-neutral-400: (
+                color: my-color(neutral-400)
+            ),
+            c-neutral-500: (
+                color: my-color(neutral-500)
+            ),
+            c-neutral-600: (
+                color: my-color(neutral-600)
+            ),
+            c-neutral-700: (
+                color: my-color(neutral-700)
+            ),
+            c-neutral-800: (
+                color: my-color(neutral-800)
+            ),
+            c-neutral-900: (
+                color: my-color(neutral-900)
+            ),
+            c-support-success-100: (
+                color: my-color(support-success-100)
+            ),
+            c-support-success-200: (
+                color: my-color(support-success-200)
+            ),
+            c-support-success-300: (
+                color: my-color(support-success-300)
+            ),
+            c-support-success-400: (
+                color: my-color(support-success-400)
+            ),
+            c-support-success-500: (
+                color: my-color(support-success-500)
+            ),
+            c-support-success-600: (
+                color: my-color(support-success-600)
+            ),
+            c-support-success-700: (
+                color: my-color(support-success-700)
+            ),
+            c-support-success-800: (
+                color: my-color(support-success-800)
+            ),
+            c-support-success-900: (
+                color: my-color(support-success-900)
+            ),
+            c-support-warning-100: (
+                color: my-color(support-warning-100)
+            ),
+            c-support-warning-200: (
+                color: my-color(support-warning-200)
+            ),
+            c-support-warning-300: (
+                color: my-color(support-warning-300)
+            ),
+            c-support-warning-400: (
+                color: my-color(support-warning-400)
+            ),
+            c-support-warning-500: (
+                color: my-color(support-warning-500)
+            ),
+            c-support-warning-600: (
+                color: my-color(support-warning-600)
+            ),
+            c-support-warning-700: (
+                color: my-color(support-warning-700)
+            ),
+            c-support-warning-800: (
+                color: my-color(support-warning-800)
+            ),
+            c-support-warning-900: (
+                color: my-color(support-warning-900)
+            ),
+            c-support-danger-100: (
+                color: my-color(support-danger-100)
+            ),
+            c-support-danger-200: (
+                color: my-color(support-danger-200)
+            ),
+            c-support-danger-300: (
+                color: my-color(support-danger-300)
+            ),
+            c-support-danger-400: (
+                color: my-color(support-danger-400)
+            ),
+            c-support-danger-500: (
+                color: my-color(support-danger-500)
+            ),
+            c-support-danger-600: (
+                color: my-color(support-danger-600)
+            ),
+            c-support-danger-700: (
+                color: my-color(support-danger-700)
+            ),
+            c-support-danger-800: (
+                color: my-color(support-danger-800)
+            ),
+            c-support-danger-900: (
+                color: my-color(support-danger-900)
+            ),
+            // BACKGROUND COLOR
+            bc-primary-100: (
+                background-color: my-color(primary-100)
+            ),
+            bc-primary-200: (
+                background-color: my-color(primary-200)
+            ),
+            bc-primary-300: (
+                background-color: my-color(primary-300)
+            ),
+            bc-primary-400: (
+                background-color: my-color(primary-400)
+            ),
+            bc-primary-500: (
+                background-color: my-color(primary-500)
+            ),
+            bc-primary-600: (
+                background-color: my-color(primary-600)
+            ),
+            bc-primary-700: (
+                background-color: my-color(primary-700)
+            ),
+            bc-primary-800: (
+                background-color: my-color(primary-800)
+            ),
+            bc-primary-900: (
+                background-color: my-color(primary-900)
+            ),
+            bc-neutral-100: (
+                background-color: my-color(neutral-100)
+            ),
+            bc-neutral-200: (
+                background-color: my-color(neutral-200)
+            ),
+            bc-neutral-300: (
+                background-color: my-color(neutral-300)
+            ),
+            bc-neutral-400: (
+                background-color: my-color(neutral-400)
+            ),
+            bc-neutral-500: (
+                background-color: my-color(neutral-500)
+            ),
+            bc-neutral-600: (
+                background-color: my-color(neutral-600)
+            ),
+            bc-neutral-700: (
+                background-color: my-color(neutral-700)
+            ),
+            bc-neutral-800: (
+                background-color: my-color(neutral-800)
+            ),
+            bc-neutral-900: (
+                background-color: my-color(neutral-900)
+            ),
+            bc-support-success-100: (
+                background-color: my-color(support-success-100)
+            ),
+            bc-support-success-200: (
+                background-color: my-color(support-success-200)
+            ),
+            bc-support-success-300: (
+                background-color: my-color(support-success-300)
+            ),
+            bc-support-success-400: (
+                background-color: my-color(support-success-400)
+            ),
+            bc-support-success-500: (
+                background-color: my-color(support-success-500)
+            ),
+            bc-support-success-600: (
+                background-color: my-color(support-success-600)
+            ),
+            bc-support-success-700: (
+                background-color: my-color(support-success-700)
+            ),
+            bc-support-success-800: (
+                background-color: my-color(support-success-800)
+            ),
+            bc-support-success-900: (
+                background-color: my-color(support-success-900)
+            ),
+            bc-support-warning-100: (
+                background-color: my-color(support-warning-100)
+            ),
+            bc-support-warning-200: (
+                background-color: my-color(support-warning-200)
+            ),
+            bc-support-warning-300: (
+                background-color: my-color(support-warning-300)
+            ),
+            bc-support-warning-400: (
+                background-color: my-color(support-warning-400)
+            ),
+            bc-support-warning-500: (
+                background-color: my-color(support-warning-500)
+            ),
+            bc-support-warning-600: (
+                background-color: my-color(support-warning-600)
+            ),
+            bc-support-warning-700: (
+                background-color: my-color(support-warning-700)
+            ),
+            bc-support-warning-800: (
+                background-color: my-color(support-warning-800)
+            ),
+            bc-support-warning-900: (
+                background-color: my-color(support-warning-900)
+            ),
+            bc-support-danger-100: (
+                background-color: my-color(support-danger-100)
+            ),
+            bc-support-danger-200: (
+                background-color: my-color(support-danger-200)
+            ),
+            bc-support-danger-300: (
+                background-color: my-color(support-danger-300)
+            ),
+            bc-support-danger-400: (
+                background-color: my-color(support-danger-400)
+            ),
+            bc-support-danger-500: (
+                background-color: my-color(support-danger-500)
+            ),
+            bc-support-danger-600: (
+                background-color: my-color(support-danger-600)
+            ),
+            bc-support-danger-700: (
+                background-color: my-color(support-danger-700)
+            ),
+            bc-support-danger-800: (
+                background-color: my-color(support-danger-800)
+            ),
+            bc-support-danger-900: (
+                background-color: my-color(support-danger-900)
+            ),
         )
     )
 );
