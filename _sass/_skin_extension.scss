@@ -40,6 +40,35 @@ $briks-components-generic: (
                     )
                 )
             ),
+            // c-skin m-checkbox-1
+            checkbox-1: (
+                position: absolute,
+                opacity: 0,
+                pseudo-elements: (
+                    before: (
+                        selector: '+label',
+                        content: '',
+                        display: inline-flex,
+                        width: 24px,
+                        height: 24px,
+                        min-width: 24px,
+                        min-height: 24px,
+                        border: my-border(10),
+                        background: my-color(neutral-900),
+                        border-radius: my-border-radius(1)
+                    )
+                ),
+                pseudo-classes: (
+                    checked: (
+                        selector: '+label',
+                        pseudo-elements: (
+                            before: (
+                                background: center / 80% my-color(primary-500) no-repeat url('https://itautomotive-dev.github.io/vehServices-ui/img/checked-stroke-white.svg')
+                            )
+                        )
+                    )
+                )
+            ),
             // c-skin m-disabled
             disabled: (
                 pointer-events: none,
