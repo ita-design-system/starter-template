@@ -3,47 +3,50 @@ layout: libdoc/page-codemirror
 permalink: index.html
 unlisted: true
 ---
-<header class="c-skin m-bc-primary-900">
-    <h1 class="c-txt m-ff-lead-700">Starter template IT Automotive.</h1>
-    <p>Ceci est un bac à sable de la configuration présente dans _config.yml. 
-        Les <a href="https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks/settings/tokens" 
-            target="_blank">
-            design tokens
-        </a> 
-        sont utilisés à titre d'exemple.
-    </p>
-</header>
-<main>
-    <section>
-        <h2>Les checkbox</h2>
-        <fieldset>
-            <legend class="u-d-none">Légende</legend>
-            <div>
-                <input type="checkbox" id="foo1" class="c-skin m-checkbox-1">
-                <label for="foo1" class="c-flex m-gap-1 m-cross-center">Numéro 1</label>
-            </div>
-            <div>
-                <input type="checkbox" id="foo2" class="c-skin m-checkbox-1">
-                <label for="foo2" class="c-flex m-gap-1 m-cross-center">Numéro 2</label>
-            </div>
-            <div>
-                <input type="checkbox" id="foo3" class="c-skin m-checkbox-1">
-                <label for="foo3" class="c-flex m-gap-1 m-cross-center">Numéro 3</label>
-            </div>
-        </fieldset>
-    </section>
-    <section>
-        <h2>Les boutons</h2>
-        <nav>
-            <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin m-cur-pointer m-b-0 m-scheme-1 m-transition-1">
-                Bouton<span>icon</span>
-            </button>
-            <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin" disabled>
-                Bouton<span>icon</span>
-            </button>
-            <span class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin" disabled>
-                Bouton<span>icon</span>
-            </span>
-        </nav>
-    </section>
-</main>
+<div class="c-txt m-ff-lead-400">
+    <header class="c-skin m-bc-primary-400 m-c-primary-900 c-dim m-p-12 c-txt m-ta-center">
+        <h1 class="c-txt m-ff-lead-700 m-fs-13">Starter template IT Automotive.</h1>
+        <p class="c-txt m-fs-7 m-lh-6">Ceci est un bac à sable de la configuration présente dans _config.yml. 
+            Les <a href="https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks/settings/tokens" 
+                target="_blank"
+                class="c-skin m-c-neutral-900">
+                design tokens
+            </a> 
+            sont utilisés à titre d'exemple.
+        </p>
+    </header>
+    <main>
+        <section class="c-dim m-m-auto" style="max-width: 50ch;">
+            <h2 class="c-txt m-ff-lead-700 m-fs-10">Les checkbox</h2>
+            <fieldset class="c-skin m-b-6">
+                <legend>Légende</legend>
+                <div>
+                    <input type="checkbox" id="foo1" class="c-skin m-checkbox-1">
+                    <label for="foo1" class="c-flex m-gap-1 m-cross-center">Numéro 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="foo2" class="c-skin m-checkbox-1">
+                    <label for="foo2" class="c-flex m-gap-1 m-cross-center">Numéro 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="foo3" class="c-skin m-checkbox-1">
+                    <label for="foo3" class="c-flex m-gap-1 m-cross-center">Numéro 3</label>
+                </div>
+            </fieldset>
+        </section>
+        <section>
+            <h2>Les boutons</h2>
+            <nav>
+                <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin m-cur-pointer m-b-0 m-scheme-1 m-transition-1">
+                    Bouton<span>icon</span>
+                </button>
+                <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin" disabled>
+                    Bouton<span>icon</span>
+                </button>
+                <span class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin" disabled>
+                    Bouton<span>icon</span>
+                </span>
+            </nav>
+        </section>
+    </main>
+</div>
