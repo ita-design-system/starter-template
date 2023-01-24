@@ -129,3 +129,141 @@ ui/
 └── js
 ```
 
+## Scope des composants
+
+Le diagramme ci-dessous reprend la portée des propriétés CSS des composants.
+
+```mermaid
+classDiagram
+    class c_flex {
+        display: flex
+        align-items
+        justify-content
+        flex-wrap
+        flex-direction
+        gap
+    }
+    class c_dim {
+        flex-grow
+        height
+        margin
+        max-height
+        max-width
+        min-height
+        min-width
+        order
+        overflow
+        padding
+        width
+    }
+    class c_pos {
+        position
+        top
+        right
+        bottom
+        left
+        transform
+        z-index
+    }
+    class c_txt {
+        display: -webkit-box
+        font-family
+        font-size
+        font-style
+        font-weight
+        letter-spacing
+        line-height
+        text-align
+        text-decoration
+        text-overflow
+        text-transform
+        vertical-align
+        white-space
+        word-break
+        -webkit-box-orient
+        -webkit-line-clamp
+    }
+    class c_skin {
+        background
+        border
+        border-radius
+        box-shadow
+        color
+        cursor
+        list-style
+        opacity
+        outline
+        pointer-events
+        transition
+    }
+ ```
+ 
+ ## Abréviations utilisées
+
+Abréviations désignant les propriété CSS.
+
+| Propriété CSS | Abréviation |
+|:-|:-|
+| aspect-ratio | `ar-` |
+| background | `bg-` |
+| background-color | `bc-` |
+| background-image | `bi-` |
+| background-position | `bpos-` |
+| background-repeat | `brep-` |
+| background-size | `bsize-` |
+| border | `b-` |
+| border-top | `bt-` |
+| border-right | `br-` |
+| border-bottom | `bb-` |
+| border-left | `bl-` |
+| border-radius | `brad-` |
+| border-top-left-radius | `bradtl-` |
+| border-top-right-radius | `bradtr-` |
+| border-bottom-right-radius | `bradbr-` |
+| border-bottom-left-radius | `bradbl-` |
+| bottom | `bottom-` |
+| box-shadow | `bs-` |
+| break-after | `ba-` |
+| color | `c-` |
+| cursor | `cur-` |
+| display | `d-` |
+| font-family | `ff-` |
+| font-size | `fs-` |
+| font-style | `fstyle-` |
+| font-weight | `fw-` |
+| height | `h-` |
+| left | `left-` |
+| letter-spacing | `lsp-` |
+| line-height | `lh-` |
+| list-style | `ls-` |
+| margin | `m-` |
+| margin-top | `mt-` |
+| margin-right | `mr-` |
+| margin-bottom | `mb-` |
+| margin-left | `ml-` |
+| max-height | `maxh-` |
+| max-width | `maxw-` |
+| min-height | `minh-` |
+| min-width | `minw-` |
+| opacity | `opa-` |
+| order | `order-` |
+| overflow | `o-` |
+| padding | `p-` |
+| padding-top | `pt-` |
+| padding-right | `pr-` |
+| padding-bottom | `pb-` |
+| padding-left | `pl-` |
+| pointer-events | `pe-` |
+| pos | `pos-` |
+| right | `right-` |
+| text-align | `ta-` |
+| text-decoration | `td-` |
+| text-transform | `tt-` |
+| transition | `transition-` |
+| top | `top-` |
+| vertical-align | `va-` |
+| visibility | `v-` |
+| word-break | `wb-` |
+| white-space | `ws-` |
+| width | `w-` |
+| z-index | `z-` |
