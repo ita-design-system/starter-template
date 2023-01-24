@@ -144,6 +144,7 @@ classDiagram
         gap
     }
     class c_dim {
+        aspect-ratio
         flex-grow
         height
         margin
@@ -202,68 +203,66 @@ classDiagram
 
 Abréviations désignant les propriété CSS.
 
-| Propriété CSS | Abréviation |
-|:-|:-|
-| aspect-ratio | `ar-` |
-| background | `bg-` |
-| background-color | `bc-` |
-| background-image | `bi-` |
-| background-position | `bpos-` |
-| background-repeat | `brep-` |
-| background-size | `bsize-` |
-| border | `b-` |
-| border-top | `bt-` |
-| border-right | `br-` |
-| border-bottom | `bb-` |
-| border-left | `bl-` |
-| border-radius | `brad-` |
-| border-top-left-radius | `bradtl-` |
-| border-top-right-radius | `bradtr-` |
-| border-bottom-right-radius | `bradbr-` |
-| border-bottom-left-radius | `bradbl-` |
-| bottom | `bottom-` |
-| box-shadow | `bs-` |
-| break-after | `ba-` |
-| color | `c-` |
-| cursor | `cur-` |
-| display | `d-` |
-| font-family | `ff-` |
-| font-size | `fs-` |
-| font-style | `fstyle-` |
-| font-weight | `fw-` |
-| height | `h-` |
-| left | `left-` |
-| letter-spacing | `lsp-` |
-| line-height | `lh-` |
-| list-style | `ls-` |
-| margin | `m-` |
-| margin-top | `mt-` |
-| margin-right | `mr-` |
-| margin-bottom | `mb-` |
-| margin-left | `ml-` |
-| max-height | `maxh-` |
-| max-width | `maxw-` |
-| min-height | `minh-` |
-| min-width | `minw-` |
-| opacity | `opa-` |
-| order | `order-` |
-| overflow | `o-` |
-| padding | `p-` |
-| padding-top | `pt-` |
-| padding-right | `pr-` |
-| padding-bottom | `pb-` |
-| padding-left | `pl-` |
-| pointer-events | `pe-` |
-| pos | `pos-` |
-| right | `right-` |
-| text-align | `ta-` |
-| text-decoration | `td-` |
-| text-transform | `tt-` |
-| transition | `transition-` |
-| top | `top-` |
-| vertical-align | `va-` |
-| visibility | `v-` |
-| word-break | `wb-` |
-| white-space | `ws-` |
-| width | `w-` |
-| z-index | `z-` |
+| Propriété CSS | Abréviation | Composant / modifieur associé | Utilitaire associé |
+|:-|:-|:-|:-|
+| aspect-ratio | `ar-` | `c-dim m-ar-` | `u-ar-` |
+| background | `bg-` | `c-skin m-bg-` | `u-bg-` |
+| background-color | `bc-` | `c-skin m-bc-` | `u-bc-` |
+| background-image | `bi-` | `c-skin m-bi-` | `u-bi-` |
+| background-position | `bpos-` | `c-skin m-bpos-` | `u-bpos-` |
+| background-repeat | `brep-` | `c-skin m-brep-` | `u-brep-` |
+| background-size | `bsize-` | `c-skin m-bsize-` | `u-bsize-` |
+| border | `b-` | `c-skin m-b-` | `u-b-` |
+| border-top | `bt-` | `c-skin m-bt-` | `u-bt-` |
+| border-right | `br-` | `c-skin m-br-` | `u-br-` |
+| border-bottom | `bb-` | `c-skin m-bb-` | `u-bb-` |
+| border-left | `bl-` | `c-skin m-bl-` | `u-bl-` |
+| border-radius | `brad-` | `c-skin m-brad-` | `u-brad-` |
+| border-top-left-radius | `bradtl-` | `c-skin m-bradtl-` | `u-bradtl-` |
+| border-top-right-radius | `bradtr-` | `c-skin m-bradtr-` | `u-bradtr-` |
+| border-bottom-right-radius | `bradbr-` | `c-skin m-bradbr-` | `u-bradbr-` |
+| border-bottom-left-radius | `bradbl-` | `c-skin m-bradbl-` | `u-bradbl-` |
+| bottom | `bottom-` | `c-pos m-bottom-` | `u-bottom-` |
+| box-shadow | `bs-` | `c-skin m-bs-` | `u-bs-` |
+| color | `c-` | `c-skin m-c-` | `u-c-` |
+| cursor | `cur-` | `c-skin m-cur-` | `u-cur-` |
+| display | `d-` | `c-dis` | `u-` |
+| font-family | `ff-` | `c-txt m-ff-` | `u-ff-` |
+| font-size | `fs-` | `c-txt m-fs-` | `u-fs-` |
+| font-style | `fstyle-` | `c-txt m-fstyle-` | `u-fstyle-` |
+| font-weight | `fw-` | `c-txt m-fw-` | `u-fw-` |
+| height | `h-` | `c-dim m-h-` | `u-h-` |
+| left | `left-` | `c-pos m-left-` | `u-left-` |
+| letter-spacing | `lsp-` | `c-txt m-lsp-` | `u-lsp-` |
+| line-height | `lh-` | `c-txt m-lh-` | `u-lh-` |
+| list-style | `ls-` | `c-skin m-ls-` | `u-ls-` |
+| margin | `m-` | `c-dim m-m-` | `u-m-` |
+| margin-top | `mt-` | `c-dim m-mt-` | `u-mt-` |
+| margin-right | `mr-` | `c-dim m-mr-` | `u-mr-` |
+| margin-bottom | `mb-` | `c-dim m-mb-` | `u-mb-` |
+| margin-left | `ml-` | `c-dim m-ml-` | `u-ml-` |
+| max-height | `maxh-` | `c-dim m-maxh-` | `u-maxh-` |
+| max-width | `maxw-` | `c-dim m-maxw-` | `u-maxw-` |
+| min-height | `minh-` | `c-dim m-minh-` | `u-minh-` |
+| min-width | `minw-` | `c-dim m-minw-` | `u-minw-` |
+| opacity | `opa-` | `c-skin m-opa-` | `u-opa-` |
+| order | `order-` | `c-dim m-order-` | `u-order-` |
+| overflow | `o-` | `c-dim m-o-` | `u-o-` |
+| padding | `p-` | `c-dim m-p-` | `u-p-` |
+| padding-top | `pt-` | `c-dim m-pt-` | `u-pt-` |
+| padding-right | `pr-` | `c-dim m-pr-` | `u-pr-` |
+| padding-bottom | `pb-` | `c-dim m-pb-` | `u-pb-` |
+| padding-left | `pl-` | `c-dim m-pl-` | `u-pl-` |
+| pointer-events | `pe-` | `c-skin m-pe-` | `u-pe-` |
+| right | `right-` | `c-pos m-right-` | `u-right-` |
+| text-align | `ta-` | `c-txt m-ta-` | `u-ta-` |
+| text-decoration | `td-` | `c-txt m-td-` | `u-td-` |
+| text-transform | `tt-` | `c-txt m-tt-` | `u-tt-` |
+| transition | `transition-` | `c-skin m-transition-` | `u-transition-` |
+| top | `top-` | `c-pos m-top-` | `u-top-` |
+| vertical-align | `va-` | `c-txt m-va-` | `u-va-` |
+| visibility | `v-` | `c-skin m-v-` | `u-v-` |
+| word-break | `wb-` | `c-txt m-wb-` | `u-wb-` |
+| white-space | `ws-` | `c-txt m-ws-` | `u-ws-` |
+| width | `w-` | `c-dim m-w-` | `u-w-` |
+| z-index | `z-` | `c-pos m-z-` | `u-z-` |
