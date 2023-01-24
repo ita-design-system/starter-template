@@ -8,8 +8,8 @@ plugins:
 title: ITA Starter Template # title of the documentation
 description: >- # Description of the docs. (>- means to ignore newlines until next param)
   Template de démarrage pour les projets web du système de design de IT Automotive.
-baseurl: "/starter-template/_site" # the subpath of your site, e.g. /blog
-url: "http://192.168.1.54" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/starter-template/_site" # the subpath of your site, e.g. /blog
+# url: "http://192.168.1.54" # the base hostname & protocol for your site, e.g. http://example.com
 #permalink: /:path/:basename/:output_ext
 #destination: ../marcelrent/public/proto-app # Build relative path destination. The destination directory e.g. /blog
 #keep_files: [cache]
