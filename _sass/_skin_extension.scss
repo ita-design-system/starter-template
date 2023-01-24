@@ -19,7 +19,7 @@ $briks-components-generic: (
                 disabled: (
                     pointer-events: none,
                     color: grey,
-                    background-color: yellow
+                    background-color: lightgrey
                 )
             )
         ),
@@ -34,7 +34,7 @@ $briks-components-generic: (
                 color: my-color(neutral-900),
                 pseudo-classes: (
                     hover: (
-                        background-color: my-color(primary-700),
+                        background-color: my-color(primary-400),
                         color: my-color(neutral-900),
                     )
                 )
@@ -45,24 +45,55 @@ $briks-components-generic: (
                 opacity: 0,
                 pseudo-elements: (
                     before: (
-                        selector: '+label',
+                        selector: '+*',
                         content: '',
                         display: inline-flex,
                         width: 24px,
                         height: 24px,
                         min-width: 24px,
                         min-height: 24px,
-                        border: my-border(10),
+                        border: my-border(5),
                         background: my-color(neutral-900),
                         border-radius: my-border-radius(1)
                     )
                 ),
                 pseudo-classes: (
                     checked: (
-                        selector: '+label',
+                        selector: '+*',
                         pseudo-elements: (
                             before: (
+                                border: my-border(6),
                                 background: center / 80% my-color(primary-500) no-repeat url('https://itautomotive-dev.github.io/vehServices-ui/img/checked-stroke-white.svg')
+                            )
+                        )
+                    )
+                )
+            ),
+            // c-skin m-radio-1
+            radio-1: (
+                position: absolute,
+                opacity: 0,
+                pseudo-elements: (
+                    before: (
+                        selector: '+*',
+                        content: '',
+                        display: inline-flex,
+                        width: 24px,
+                        height: 24px,
+                        min-width: 24px,
+                        min-height: 24px,
+                        border: my-border(5),
+                        background: my-color(neutral-900),
+                        border-radius: 100%
+                    )
+                ),
+                pseudo-classes: (
+                    checked: (
+                        selector: '+*',
+                        pseudo-elements: (
+                            before: (
+                                border: my-border(6),
+                                background: radial-gradient(circle, my-color(primary-500) 40%, my-color(neutral-900) 46%, my-color(neutral-900) 100%)
                             )
                         )
                     )
