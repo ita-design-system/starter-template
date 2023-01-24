@@ -112,10 +112,20 @@ Le starter-template contient l'arborescence des fichiers:
 ui/
 ├── css/
 │   ├── briks_css_variables.scss
-│   ├── briks_fonts.scss
+│   ├── briks_dim_extension.scss
+│   ├── briks_dim_generic.scss
+│   ├── briks_flex_extension.scss
 │   ├── briks_flex_generic.scss
-│   └── briks_flex_extension.scss
-├── img
+│   ├── briks_fonts.scss
+│   ├── briks_pos_extension.scss
+│   ├── briks_pos_generic.scss
+│   ├── briks_skin_extension.scss
+│   ├── briks_skin_generic.scss
+│   ├── briks_txt_extension.scss
+│   ├── briks_txt_generic.scss
+│   ├── briks_utilities_generic.scss
+│   └── briks_utilities_extension.scss
+├── medias
 └── js
 ```
 
