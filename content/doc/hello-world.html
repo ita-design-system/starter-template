@@ -3,50 +3,109 @@ layout: libdoc/page-codemirror
 permalink: index.html
 unlisted: true
 ---
-<div class="c-txt m-ff-lead-400">
-    <header class="c-skin m-bc-primary-400 m-c-primary-900 c-dim m-p-12 c-txt m-ta-center">
-        <h1 class="c-txt m-ff-lead-700 m-fs-13">Starter template IT Automotive.</h1>
+<div class="c-txt m-ff-lead-400 m-antialiased">
+    <header class="c-skin m-bc-primary-400 m-c-primary-900 
+        c-dim m-p-12 
+        c-txt m-ta-center">
+        <h1 class="c-txt m-ff-lead-700 m-fs-13
+            c-skin m-c-neutral-900">
+            Starter template IT Automotive.
+        </h1>
         <p class="c-txt m-fs-7 m-lh-6">Ceci est un bac à sable de la configuration présente dans _config.yml. 
-            Les <a href="https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks/settings/tokens" 
+            Les 
+            <a href="https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks/settings/tokens" 
                 target="_blank"
                 class="c-skin m-c-neutral-900">
-                design tokens
-            </a> 
+                design tokens</a> 
             sont utilisés à titre d'exemple.
         </p>
     </header>
     <main>
         <section class="c-dim m-m-auto" style="max-width: 50ch;">
-            <h2 class="c-txt m-ff-lead-700 m-fs-10">Les checkbox</h2>
-            <fieldset class="c-skin m-b-6">
-                <legend>Légende</legend>
-                <div>
-                    <input type="checkbox" id="foo1" class="c-skin m-checkbox-1">
-                    <label for="foo1" class="c-flex m-gap-1 m-cross-center">Numéro 1</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="foo2" class="c-skin m-checkbox-1">
-                    <label for="foo2" class="c-flex m-gap-1 m-cross-center">Numéro 2</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="foo3" class="c-skin m-checkbox-1">
-                    <label for="foo3" class="c-flex m-gap-1 m-cross-center">Numéro 3</label>
+            <h2 class="c-txt m-ff-lead-700 m-fs-10">Les Input</h2>
+            <fieldset class="c-flex m-column m-gap-1 c-skin m-b-6 m-brad-1 c-dim m-p-6">
+                <legend class="c-skin m-c-primary-500 c-txt m-fs-3">Légende</legend>
+                <div class="c-flex m-column-reverse">
+                    <input type="text" 
+                        id="input1"
+                        class="c-dim m-pt-3 m-pr-4 m-pb-3 m-pl-4 
+                            c-txt m-fs-5
+                            c-skin m-bc-neutral-900 m-b-6 m-brad-1 m-input-validation-1"
+                        pattern="\\w{3,16}"
+                        required>
+                    <label for="input1"
+                        class="c-flex m-main-space-between m-cross-end
+                        c-txt m-fs-4">
+                        Label input 1 
+                        <span class="c-skin m-c-neutral-500
+                            c-txt m-fs-3">
+                            (i) 3 à 16 caractères
+                        </span>
+                    </label>
                 </div>
             </fieldset>
         </section>
-        <section>
-            <h2>Les boutons</h2>
+        <section class="c-dim m-m-auto" style="max-width: 50ch;">
+            <h2 class="c-txt m-ff-lead-700 m-fs-10">Les boutons</h2>
             <nav>
-                <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin m-cur-pointer m-b-0 m-scheme-1 m-transition-1">
-                    Bouton<span>icon</span>
+                <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 
+                    c-dim m-p-5 m-pl-7 m-pr-7 
+                    c-txt m-ff-lead-700 m-fs-4 m-td-none 
+                    c-skin m-scheme-1 m-cur-pointer m-b-0 m-brad-1 m-transition-1">
+                    Bouton
+                    <span>icon</span>
                 </button>
-                <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin" disabled>
-                    Bouton<span>icon</span>
+                <button class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 
+                    c-dim m-p-5 m-pl-7 m-pr-7 
+                    c-txt m-ff-lead-700 m-fs-4 m-td-none 
+                    c-skin" disabled>
+                    Bouton
+                    <span>icon</span>
                 </button>
-                <span class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 c-dim m-p-5 m-pl-7 m-pr-7 c-txt m-ff-lead-700 m-fs-4 m-td-none c-skin" disabled>
-                    Bouton<span>icon</span>
+                <span class="c-flex m-inline-flex m-main-center m-cross-center m-gap-1 
+                    c-dim m-p-5 m-pl-7 m-pr-7 
+                    c-txt m-ff-lead-700 m-fs-4 m-td-none 
+                    c-skin m-disabled">
+                    Bouton
+                    <span>icon</span>
                 </span>
             </nav>
+        </section>
+        <section class="c-dim m-m-auto" style="max-width: 50ch;">
+            <h2 class="c-txt m-ff-lead-700 m-fs-10">Les radio</h2>
+            <fieldset class="c-flex m-column m-gap-1 c-skin m-b-6 m-brad-1 c-dim m-p-6">
+                <legend class="c-skin m-c-primary-500 c-txt m-fs-3">Légende</legend>
+                <div>
+                    <input type="radio" id="radio1" name="radio" class="c-skin m-radio-1">
+                    <label for="radio1" class="c-flex m-gap-1 m-cross-center">Radio 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio2" name="radio" class="c-skin m-radio-1">
+                    <label for="radio2" class="c-flex m-gap-1 m-cross-center">Radio 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio3" name="radio" class="c-skin m-radio-1">
+                    <label for="radio3" class="c-flex m-gap-1 m-cross-center">Radio 3</label>
+                </div>
+            </fieldset>
+        </section>
+        <section class="c-dim m-m-auto" style="max-width: 50ch;">
+            <h2 class="c-txt m-ff-lead-700 m-fs-10">Les checkbox</h2>
+            <fieldset class="c-flex m-column m-gap-1 c-skin m-b-6 m-brad-1 c-dim m-p-6">
+                <legend class="c-skin m-c-primary-500 c-txt m-fs-3">Légende</legend>
+                <div>
+                    <input type="checkbox" id="foo1" class="c-skin m-checkbox-1">
+                    <label for="foo1" class="c-flex m-gap-1 m-cross-center">Checkbox 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="foo2" class="c-skin m-checkbox-1">
+                    <label for="foo2" class="c-flex m-gap-1 m-cross-center">Checkbox 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="foo3" class="c-skin m-checkbox-1">
+                    <label for="foo3" class="c-flex m-gap-1 m-cross-center">Checkbox 3</label>
+                </div>
+            </fieldset>
         </section>
     </main>
 </div>
