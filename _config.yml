@@ -126,8 +126,8 @@ playground:
     stylesheets: 
         - /ui/css/briks_css_variables.css
         - /ui/css/briks_fonts.css
-        - /ui/css/briks_flex_generic.css
-        - /ui/css/briks_flex_extension.css
+        - /ui/css/briks_dis_generic.css
+        - /ui/css/briks_dis_extension.css
         - /ui/css/briks_dim_generic.css
         - /ui/css/briks_dim_extension.css
         - /ui/css/briks_pos_generic.css
