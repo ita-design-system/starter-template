@@ -1,13 +1,13 @@
 /*
-    C-FLEX EXTENSION
-    Extension du composant générique c-flex
-    https://github.com/ita-design-system/c-flex.scss
+    C-DIS EXTENSION
+    Extension du composant générique c-dis
+    https://github.com/ita-design-system/c-dis.scss
     Ce fichier doit servir à étendre ou surcharger les fonctionnalités
-    du composant c-flex selon les besoins du projet
+    du composant c-dis selon les besoins du projet
 */
 $briks-components-generic: (
     // Nom du composant, obligatoirement flex
-    flex: ( 
+    dis: ( 
         // Extension activée true ou false
         enabled: true, 
         // Responsive activée true ou false pour l'extension
@@ -21,13 +21,13 @@ $briks-components-generic: (
         modifiers: ( 
             // Gap
             // Surcharge de la variable CSS --ita-gap pour compatibilité avec c-dim
-            gap-1: ( // c-flex m-gap-1
+            gap-1: ( // c-dis m-flex m-gap-1
                 --ita-gap: my-spacing(2)
             ),
-            gap-2: ( // c-flex m-gap-2
+            gap-2: ( // c-dis m-flex m-gap-2
                 --ita-gap: my-spacing(4)
             ),
-            gap-3: ( // c-flex m-gap-3
+            gap-3: ( // c-dis m-flex m-gap-3
                 --ita-gap: my-spacing(8)
             )
         )
