@@ -34,18 +34,18 @@ classDiagram
         Fichiers html Liquid
     }
     class Components_Extensions {
-        _sass/_flex_extension
+        _sass/_dis_extension
         _sass/_dim_extension
         _sass/_pos_extension
         _sass/_txt_extension
-        _sass/_ctn_extension
+        _sass/_skin_extension
     }
     class Generic_Components {
-        _flex_generic.scss
+        _dis_generic.scss
         _dim_generic.scss
         _pos_generic.scss
         _txt_generic.scss
-        _ctn_generic.scss
+        _skin_generic.scss
     }
     class Generic_Utilities {
         _utilities_generic.scss
@@ -68,7 +68,7 @@ classDiagram
     }
     class UI_Files {
         /css
-        /img
+        /medias
         /js
     }
 ```
@@ -114,8 +114,8 @@ ui/
 │   ├── briks_css_variables.scss
 │   ├── briks_dim_extension.scss
 │   ├── briks_dim_generic.scss
-│   ├── briks_flex_extension.scss
-│   ├── briks_flex_generic.scss
+│   ├── briks_dis_extension.scss
+│   ├── briks_dis_generic.scss
 │   ├── briks_fonts.scss
 │   ├── briks_pos_extension.scss
 │   ├── briks_pos_generic.scss
@@ -135,13 +135,14 @@ Le diagramme ci-dessous reprend la portée des propriétés CSS des composants.
 
 ```mermaid
 classDiagram
-    class c_flex {
-        display: flex
+    class c_dis {
+        display
         align-items
         justify-content
         flex-wrap
         flex-direction
         gap
+        grid-gap
     }
     class c_dim {
         aspect-ratio
@@ -226,7 +227,7 @@ Abréviations désignant les propriété CSS.
 | box-shadow | `bs-` | `c-skin m-bs-` | `u-bs-` |
 | color | `c-` | `c-skin m-c-` | `u-c-` |
 | cursor | `cur-` | `c-skin m-cur-` | `u-cur-` |
-| display | `d-` | `c-dis` | `u-` |
+| display | `d-` | `c-dis m-` | `u-d-` |
 | font-family | `ff-` | `c-txt m-ff-` | `u-ff-` |
 | font-size | `fs-` | `c-txt m-fs-` | `u-fs-` |
 | font-style | `fstyle-` | `c-txt m-fstyle-` | `u-fstyle-` |
