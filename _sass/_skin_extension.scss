@@ -46,11 +46,11 @@ $briks-components-generic: (
             input-validation-1: (
                 pseudo-classes: (
                     valid: (
-                        selector: '+*>span',
+                        selector: '+*>.input-validation-1',
                         color: my-color(support-success-500)
                     ),
                     invalid: (
-                        selector: '+*>span',
+                        selector: '+*>.input-validation-1',
                         color: my-color(support-danger-500)
                     )
                 )
