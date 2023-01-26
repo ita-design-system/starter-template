@@ -75,8 +75,10 @@ classDiagram
 
 ## Rôle du starter-template
 
-* **Créer les templates** du projet avec son environnement complet (générique + personnalisé) du système de design IT Automotive.
-* **Créer la documentation des extensions de composants**, la documentation qui n'est pas incluse dans la documentation des composants génériques.
+* **Décrire les design tokens** à partir desquels toutes les compositions et templates sont créés.
+* **Créer des extraits de code fonctionnels, appelés compositions** (boutons, modales, etc) à partir des composants génériques [c-dis](https://github.com/ita-design-system/c-dis.scss), [c-dim](https://github.com/ita-design-system/c-dim.scss), [c-pos](https://github.com/ita-design-system/c-pos.scss), [c-txt](https://github.com/ita-design-system/c-txt.scss), [c-skin](https://github.com/ita-design-system/c-skin.scss) et de leurs extensions.
+* **Créer les templates** du projet accompagné de son environnement complet.
+* **Créer la documentation** dédiée au projet.
 
 ## Codespaces
 
@@ -90,18 +92,16 @@ Ce projet peut être développé avec Github codespaces
 1. Cloner ce dépôt.
 2. Installer Jekyll sur votre machine en suivant les [instructions](https://jekyllrb.com/docs/)
 3. Ajouter un Gemfile contenant la ligne suivante
-
-  ```ruby
-  gem "jekyll-remote-theme"
-  ```
-  et exécuter `bundle install` pour installer le plugin.
+      ```ruby
+      gem "jekyll-remote-theme"
+      ```
+      et exécuter `bundle install` pour installer le plugin.
 4. Ajouter les lignes suivantes dans votre fichier de configuration LibDoc `_<NOM DU FICHIER>.yml`
-
-  ```yml
-  remote_theme: ita-design-system/jekyll-libdoc
-  plugins:
-    - jekyll-remote-theme
-  ```
+      ```yml
+      remote_theme: ita-design-system/jekyll-libdoc
+      plugins:
+        - jekyll-remote-theme
+      ```
 5. Exécuter `jekyll build` ou `jekyll build -c _votre-fichier-config.yml`
 
 ## Démarrage
