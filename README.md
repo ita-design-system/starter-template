@@ -146,6 +146,7 @@ classDiagram
     }
     class c_dim {
         aspect-ratio
+        box-sizing
         flex-grow
         height
         margin
@@ -225,6 +226,7 @@ Abréviations désignant les propriété CSS.
 | border-bottom-left-radius | `bradbl-` | `c-skin m-bradbl-` | `u-bradbl-` |
 | bottom | `bottom-` | `c-pos m-bottom-` | `u-bottom-` |
 | box-shadow | `bs-` | `c-skin m-bs-` | `u-bs-` |
+| box-sizing | `bsizing-` | `c-dim m-bsizing-` | `u-bsizing-` |
 | color | `c-` | `c-skin m-c-` | `u-c-` |
 | cursor | `cur-` | `c-skin m-cur-` | `u-cur-` |
 | display | `d-` | `c-dis m-` | `u-d-` |
