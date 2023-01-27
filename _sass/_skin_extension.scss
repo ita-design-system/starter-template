@@ -32,6 +32,16 @@ $briks-components-generic: (
             bg-select: (
                 background: right my-spacing(4) top 50% / my-font-size(7) no-repeat my-color(neutral-100) url(https://itautomotive-dev.github.io/vehServices-ui/img/icons/SVG/chevron-down.svg)
             ),
+            // c-skin m-bg-details
+            bg-details: (
+                selector: '>summary',
+                background: left my-spacing(0) top 50% / my-font-size(6) no-repeat url(https://itautomotive-dev.github.io/vehServices-ui/img/icons/SVG/chevron-right.svg)
+            ),
+            // c-skin m-details-open
+            bg-details-open: (
+                selector: '[open]>summary',
+                background: left my-spacing(0) top 50% / my-font-size(6) no-repeat url(https://itautomotive-dev.github.io/vehServices-ui/img/icons/SVG/chevron-down.svg)
+            ),
             // c-skin m-scheme-1
             scheme-1: (
                 background-color: my-color(primary-500),
