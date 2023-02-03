@@ -216,6 +216,10 @@ Abréviations désignant les propriété CSS.
 | background-size | `bsize-` | `c-skin m-bsize-` | `u-bsize-` |
 | border | `b-` | `c-skin m-b-` | `u-b-` |
 | border-style | `bstyle-` | `c-skin m-bstyle-` | `u-bstyle-` |
+| border-top-style | `btstyle-` | `c-skin m-btstyle-` | `u-btstyle-` |
+| border-right-style | `brstyle-` | `c-skin m-brstyle-` | `u-brstyle-` |
+| border-bottom-style | `bbstyle-` | `c-skin m-bbstyle-` | `u-bbstyle-` |
+| border-left-style | `blstyle-` | `c-skin m-blstyle-` | `u-blstyle-` |
 | border-width | `bwidth-` | `c-skin m-bwidth-` | `u-bwidth-` |
 | border-color | `bcolor-` | `c-skin m-bcolor-` | `u-bcolor-` |
 | border-image | `bimage-` | `c-skin m-bimage-` | `u-bimage-` |
