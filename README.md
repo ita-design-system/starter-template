@@ -4,34 +4,65 @@ Point de départ pour tout nouveau projet web utilisant le système de design de
 
 ```mermaid
 classDiagram
-    Jekyll_LibDoc <|-- Briks
-    Briks <|-- Generic_Utilities
-    Briks <|-- Generic_Components
-    Briks <|-- Design_Tokens
-    Starter_Template <|-- Jekyll_LibDoc
-    Starter_Template <|-- UI_Files
     Starter_Template <|-- Components_Extensions
     Starter_Template <|-- Utilities_Extensions
     Starter_Template <|-- Templates
     Starter_Template <|-- Project_Documentation
-    Generic_Components <|-- Design_Tokens
-    Generic_Utilities <|-- Design_Tokens
+    Starter_Template <|-- Points_d_entrees
     class Starter_Template {
         Point de départ nouveau projet web IT Automotive
         GitHub Pages
     }
-    class Jekyll_LibDoc{
-        Thème distant Jekyll
-        Compilateur SASS
-        Générateur documentation
+    class Points_d_entrees {
+        ui/
+        ├── css/
+        │   ├── briks_css_variables.scss
+        │   ├── briks_dim_extension.scss
+        │   ├── briks_dim_generic.scss
+        │   ├── briks_dis_extension.scss
+        │   ├── briks_dis_generic.scss
+        │   ├── briks_fonts.scss
+        │   ├── briks_pos_extension.scss
+        │   ├── briks_pos_generic.scss
+        │   ├── briks_skin_extension.scss
+        │   ├── briks_skin_generic.scss
+        │   ├── briks_txt_extension.scss
+        │   ├── briks_txt_generic.scss
+        │   ├── briks_utilities_generic.scss
+        │   └── briks_utilities_extension.scss
+        ├── fonts
+        ├── medias
+        └── js
     }
     class Project_Documentation {
-        /content/doc
-        Fichiers markdown ou html
+        content/
+        └── doc/
+            ├── 1.colors.html
+            ├── 2.screen-sizes.html
+            ├── 3.font-families.html
+            ├── 4.font-sizes.html
+            ├── 5.spacings.html
+            ├── 6.borders.html
+            ├── 7.border-radii.html
+            ├── 8.shadows.html
+            ├── button.html
+            ├── checkbox.html
+            ├── containers.html
+            ├── details.html
+            ├── input.html
+            ├── modal.html
+            ├── radio.html
+            ├── select.html
+            └── ...
     }
     class Templates {
-        /content/templates
-        Fichiers html Liquid
+        content/
+        └── templates/
+            ├── homepage.html
+            ├── contact.html
+            ├── page_file.html
+            ├── page_file.html
+            └── ...
     }
     class Components_Extensions {
         _sass/_dis_extension
@@ -39,6 +70,24 @@ classDiagram
         _sass/_pos_extension
         _sass/_txt_extension
         _sass/_skin_extension
+    }
+    class Utilities_Extensions {
+        _utilities_extensions.scss
+    }
+```
+
+```mermaid
+classDiagram
+    Jekyll_LibDoc <|-- Briks
+    Briks <|-- Generic_Utilities
+    Briks <|-- Generic_Components
+    Briks <|-- Design_Tokens
+    Generic_Components <|-- Design_Tokens
+    Generic_Utilities <|-- Design_Tokens
+    class Jekyll_LibDoc{
+        Thème distant Jekyll
+        Compilateur SASS
+        Générateur documentation
     }
     class Generic_Components {
         _dis_generic.scss
@@ -49,9 +98,6 @@ classDiagram
     }
     class Generic_Utilities {
         _utilities_generic.scss
-    }
-    class Utilities_Extensions {
-        _utilities_extensions.scss
     }
     class Briks{
         CSS Framework
@@ -65,11 +111,6 @@ classDiagram
         borders
         border_radius
         shadows
-    }
-    class UI_Files {
-        /css
-        /medias
-        /js
     }
 ```
 
@@ -125,6 +166,7 @@ ui/
 │   ├── briks_txt_generic.scss
 │   ├── briks_utilities_generic.scss
 │   └── briks_utilities_extension.scss
+├── fonts
 ├── medias
 └── js
 ```
