@@ -1,7 +1,7 @@
 ---
 ---
 /*
-    POINT D'ENTRÉE EXTENSION
+    POINT D'ENTRÉE BRIKS
     Placer le chemin du fichier dans le fichier _config.yml de LibDoc
 */
 
@@ -18,13 +18,13 @@
 */
 @import 'briks/settings/tokens/generic';
 /*
-    CONFIGURATION DE L'EXTENSION DU COMPOSANT C-DIS
+    CONFIGURATION C-SKIN GENERIQUE
     Requiert briks/_core.scss
-    Imports du fichier de configuration c-dis.
-    Le fichiers SASS de l'extension est dans le répertoire _sass de ce dépôt
+    Imports du fichier de configuration c-skin.
+    Les fichiers SASS composants générique sont présents dans le dépôt
+    https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks
 */
-@import 'dis_extension';
-
+@import 'briks/skin_generic';
 /*
     GÉNÉRATEUR DE COMPOSANTS
     Requiert  briks/_core.scss

@@ -154,17 +154,17 @@ playground:
     stylesheets: 
         - /ui/css/briks_css_variables.css
         - /ui/css/briks_fonts.css
-        - https://ita-design-system.github.io/c-dis.scss/content/css/c-dis.generic.css
+        - /ui/css/briks_dis_generic.css
         - /ui/css/briks_dis_extension.css
-        - https://ita-design-system.github.io/c-dim.scss/content/css/c-dim.generic.css
+        - /ui/css/briks_dim_generic.css
         - /ui/css/briks_dim_extension.css
-        - https://ita-design-system.github.io/c-pos.scss/content/css/c-pos.generic.css
+        - /ui/css/briks_pos_generic.css
         - /ui/css/briks_pos_extension.css
-        - https://ita-design-system.github.io/c-txt.scss/content/css/c-txt.generic.css
+        - /ui/css/briks_txt_generic.css
         - /ui/css/briks_txt_extension.css
-        - https://ita-design-system.github.io/c-skin.scss/content/css/c-skin.generic.css
+        - /ui/css/briks_skin_generic.css
         - /ui/css/briks_skin_extension.css
-        - https://ita-design-system.github.io/utilities.scss/content/css/utilities.generic.css
+        - /ui/css/briks_utilities_generic.css
         - /ui/css/briks_utilities_extension.css
     # Javascript in <head>. Can be either:
     # Relative URL from site root starting with slash /
