@@ -1,6 +1,58 @@
 # starter-template
 
-Point de départ pour tout nouveau projet web utilisant le système de design de IT Automotive. Ce dépôt est un clone de [Jekyll LibDoc](https://olivier3lanc.github.io/Jekyll-LibDoc/) personnalisé pour ITADS.
+Point de départ pour tout nouveau projet web utilisant le système de design de IT Automotive. Ce dépôt est un clone de [Jekyll LibDoc](https://olivier3lanc.github.io/Jekyll-LibDoc/) personnalisé pour ITADS. 
+
+## Rôle du starter-template
+
+* **Décrire les design tokens** à partir desquels toutes les compositions et templates sont créés.
+* **Créer des extraits de code fonctionnels, appelés compositions** (boutons, modales, etc) à partir des composants génériques [c-dis](https://github.com/ita-design-system/c-dis.scss), [c-dim](https://github.com/ita-design-system/c-dim.scss), [c-pos](https://github.com/ita-design-system/c-pos.scss), [c-txt](https://github.com/ita-design-system/c-txt.scss), [c-skin](https://github.com/ita-design-system/c-skin.scss) et de leurs extensions.
+* **Créer les templates** du projet accompagné de son environnement complet.
+* **Créer la documentation** dédiée au projet.
+
+
+## Installation
+
+1. Créer un nouveau fichier avec les design tokens dans le répertoire du dépôt [jekyll-libdoc/_sass/briks/settings/tokens](https://github.com/ita-design-system/jekyll-libdoc/tree/main/_sass/briks/settings/tokens). Pour plus de facilités, "enregister sous" le fichier `_generic.scss` et renseigner les maps SCSS.
+2. [Installer en local](#installation-locale-avec-jekyll-libdoc-distant) ou créer un nouveau codespaces. Pour l'installation locale avec Jekyll LibDoc distant:
+    1. Cloner ce dépôt.
+    2. Installer Jekyll sur votre machine en suivant les [instructions](https://jekyllrb.com/docs/)
+    3. Si le gem jekyll-remote-theme n'est pas déjà installé sur la machine, exécuter `bundle install` pour l'installer.
+    4. Ouvrir le fichier `_config.yml` et l'enregistrer sous `_config-ip.yml` (_config-ip.yml est présent dans .gitignore et ne doit pas être répertorié dans git)
+    5. Renseigner les champs du fichier _config-ip.yml:
+        1. `title` le nom du projet.
+        2. `description` la description du projet.
+        3. `url` l'URL locale, par exemple "http://192.168.1.6" ou "http://localhost" etc
+        4. `baseurl` le chemin vers le dossier cible, par exemple "/starter-template/_site".
+    6. Renseigner les champs du fichier _config.yml dédié à la configuration [Github Pages](https://pages.github.com/) du projet
+        1. `title` le nom du projet (idem que _config-ip.yml).
+        2. `description` la description du projet (idem que _config-ip.yml).
+        3. `url` et `baseurl` doivent rester commentées.
+    7. Exécuter `jekyll build -c _config-ip.yml`. Par défaut, le site est généré dans le répertoire `_site` dans le répertoire du dépôt.
+
+
+### Points d'entrées SASS
+
+```
+ui/
+├── css/
+│   ├── briks_css_variables.scss
+│   ├── briks_dim_extension.scss
+│   ├── briks_dim_generic.scss
+│   ├── briks_dis_extension.scss
+│   ├── briks_dis_generic.scss
+│   ├── briks_fonts.scss
+│   ├── briks_pos_extension.scss
+│   ├── briks_pos_generic.scss
+│   ├── briks_skin_extension.scss
+│   ├── briks_skin_generic.scss
+│   ├── briks_txt_extension.scss
+│   ├── briks_txt_generic.scss
+│   ├── briks_utilities_generic.scss
+│   └── briks_utilities_extension.scss
+├── fonts
+├── medias
+└── js
+```
 
 ```mermaid
 classDiagram
@@ -114,60 +166,8 @@ classDiagram
     }
 ```
 
-## Rôle du starter-template
-
-* **Décrire les design tokens** à partir desquels toutes les compositions et templates sont créés.
-* **Créer des extraits de code fonctionnels, appelés compositions** (boutons, modales, etc) à partir des composants génériques [c-dis](https://github.com/ita-design-system/c-dis.scss), [c-dim](https://github.com/ita-design-system/c-dim.scss), [c-pos](https://github.com/ita-design-system/c-pos.scss), [c-txt](https://github.com/ita-design-system/c-txt.scss), [c-skin](https://github.com/ita-design-system/c-skin.scss) et de leurs extensions.
-* **Créer les templates** du projet accompagné de son environnement complet.
-* **Créer la documentation** dédiée au projet.
-
-## Codespaces
-
-Ce projet peut être développé avec Github codespaces
-
-<img width="453" alt="image" src="https://user-images.githubusercontent.com/13103047/211783775-55d429ec-45c6-4015-8cd4-6321dc041913.png">
 
 
-## Installation locale avec Jekyll LibDoc distant
-
-1. Cloner ce dépôt.
-2. Installer Jekyll sur votre machine en suivant les [instructions](https://jekyllrb.com/docs/)
-3. Ajouter un Gemfile contenant la ligne suivante
-      ```ruby
-      gem "jekyll-remote-theme"
-      ```
-      et exécuter `bundle install` pour installer le plugin.
-4. Ajouter les lignes suivantes dans votre fichier de configuration LibDoc `_<NOM DU FICHIER>.yml`
-      ```yml
-      remote_theme: ita-design-system/jekyll-libdoc
-      plugins:
-        - jekyll-remote-theme
-      ```
-5. Exécuter `jekyll build` ou `jekyll build -c _votre-fichier-config.yml`
-
-## Points d'entrées SASS
-
-```
-ui/
-├── css/
-│   ├── briks_css_variables.scss
-│   ├── briks_dim_extension.scss
-│   ├── briks_dim_generic.scss
-│   ├── briks_dis_extension.scss
-│   ├── briks_dis_generic.scss
-│   ├── briks_fonts.scss
-│   ├── briks_pos_extension.scss
-│   ├── briks_pos_generic.scss
-│   ├── briks_skin_extension.scss
-│   ├── briks_skin_generic.scss
-│   ├── briks_txt_extension.scss
-│   ├── briks_txt_generic.scss
-│   ├── briks_utilities_generic.scss
-│   └── briks_utilities_extension.scss
-├── fonts
-├── medias
-└── js
-```
 
 # ITADS
 
