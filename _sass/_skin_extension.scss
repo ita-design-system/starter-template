@@ -28,6 +28,49 @@ $briks-components-generic: (
         // soit ajoutent des propriétés
         // soit les deux
         modifiers: ( 
+            // BORDER COLORS
+            // c-skin m-bcolor-neutral-400
+            bcolor-neutral-400: (
+                border-color: my-color(neutral-400)
+            ),
+            // c-skin m-btcolor-neutral-400
+            btcolor-neutral-400: (
+                border-top-color: my-color(neutral-400)
+            ),
+            // c-skin m-brcolor-neutral-400
+            brcolor-neutral-400: (
+                border-right-color: my-color(neutral-400)
+            ),
+            // c-skin m-bbcolor-neutral-400
+            bbcolor-neutral-400: (
+                border-bottom-color: my-color(neutral-400)
+            ),
+            // c-skin m-blcolor-neutral-400
+            blcolor-neutral-400: (
+                border-left-color: my-color(neutral-400)
+            ),
+
+            // c-skin m-bcolor-primary-500
+            bcolor-primary-500: (
+                border-color: my-color(primary-500)
+            ),
+            // c-skin m-btcolor-primary-500
+            btcolor-primary-500: (
+                border-top-color: my-color(primary-500)
+            ),
+            // c-skin m-brcolor-primary-500
+            brcolor-primary-500: (
+                border-right-color: my-color(primary-500)
+            ),
+            // c-skin m-bbcolor-primary-500
+            bbcolor-primary-500: (
+                border-bottom-color: my-color(primary-500)
+            ),
+            // c-skin m-blcolor-primary-500
+            blcolor-primary-500: (
+                border-left-color: my-color(primary-500)
+            ),
+
             // c-skin m-bg-select
             bg-select: (
                 background: right my-spacing(4) top 50% / my-font-size(7) no-repeat my-color(neutral-100) url(https://itautomotive-dev.github.io/vehServices-ui/img/icons/SVG/chevron-down.svg)
@@ -78,7 +121,9 @@ $briks-components-generic: (
                         height: 24px,
                         min-width: 24px,
                         min-height: 24px,
-                        border: my-border(8),
+                        border-width: 1px,
+                        border-style: solid,
+                        border-color: my-color(neutral-400),
                         background: my-color(neutral-100),
                         border-radius: my-border-radius(1)
                     )
@@ -88,7 +133,7 @@ $briks-components-generic: (
                         selector: '+*',
                         pseudo-elements: (
                             before: (
-                                border: my-border(9),
+                                border-color: my-color(primary-500),
                                 background: center / 80% my-color(primary-500) no-repeat url('https://itautomotive-dev.github.io/vehServices-ui/img/checked-stroke-white.svg')
                             )
                         )
@@ -108,7 +153,9 @@ $briks-components-generic: (
                         height: 24px,
                         min-width: 24px,
                         min-height: 24px,
-                        border: my-border(8),
+                        border-width: 1px,
+                        border-style: solid,
+                        border-color: my-color(neutral-400),
                         background: my-color(neutral-100),
                         border-radius: 100%
                     )
@@ -118,7 +165,7 @@ $briks-components-generic: (
                         selector: '+*',
                         pseudo-elements: (
                             before: (
-                                border: my-border(9),
+                                border-color: my-color(primary-500),
                                 background: radial-gradient(circle, my-color(primary-500) 40%, my-color(neutral-100) 46%, my-color(neutral-100) 100%)
                             )
                         )
@@ -402,291 +449,6 @@ $briks-components-generic: (
             ),
             bc-support-danger-900: (
                 background-color: my-color(support-danger-900)
-            ),
-            b-0: (
-                border: my-border(0)
-            ),
-            b-1: (
-                border: my-border(1)
-            ),
-            b-2: (
-                border: my-border(2)
-            ),
-            b-3: (
-                border: my-border(3)
-            ),
-            b-4: (
-                border: my-border(4)
-            ),
-            b-5: (
-                border: my-border(5)
-            ),
-            b-6: (
-                border: my-border(6)
-            ),
-            b-7: (
-                border: my-border(7)
-            ),
-            b-8: (
-                border: my-border(8)
-            ),
-            b-9: (
-                border: my-border(9)
-            ),
-            b-10: (
-                border: my-border(10)
-            ),
-            b-11: (
-                border: my-border(11)
-            ),
-            b-12: (
-                border: my-border(12)
-            ),
-            b-13: (
-                border: my-border(13)
-            ),
-            b-14: (
-                border: my-border(14)
-            ),
-            b-15: (
-                border: my-border(15)
-            ),
-            b-16: (
-                border: my-border(16)
-            ),
-            b-17: (
-                border: my-border(17)
-            ),
-            b-18: (
-                border: my-border(18)
-            ),
-            bt-0: (
-                border-top: my-border(0)
-            ),
-            bt-1: (
-                border-top: my-border(1)
-            ),
-            bt-2: (
-                border-top: my-border(2)
-            ),
-            bt-3: (
-                border-top: my-border(3)
-            ),
-            bt-4: (
-                border-top: my-border(4)
-            ),
-            bt-5: (
-                border-top: my-border(5)
-            ),
-            bt-6: (
-                border-top: my-border(6)
-            ),
-            bt-7: (
-                border-top: my-border(7)
-            ),
-            bt-8: (
-                border-top: my-border(8)
-            ),
-            bt-9: (
-                border-top: my-border(9)
-            ),
-            bt-10: (
-                border-top: my-border(10)
-            ),
-            bt-11: (
-                border-top: my-border(11)
-            ),
-            bt-12: (
-                border-top: my-border(12)
-            ),
-            bt-13: (
-                border-top: my-border(13)
-            ),
-            bt-14: (
-                border-top: my-border(14)
-            ),
-            bt-15: (
-                border-top: my-border(15)
-            ),
-            bt-16: (
-                border-top: my-border(16)
-            ),
-            bt-17: (
-                border-top: my-border(17)
-            ),
-            bt-18: (
-                border-top: my-border(18)
-            ),
-            br-0: (
-                border-right: my-border(0)
-            ),
-            br-1: (
-                border-right: my-border(1)
-            ),
-            br-2: (
-                border-right: my-border(2)
-            ),
-            br-3: (
-                border-right: my-border(3)
-            ),
-            br-4: (
-                border-right: my-border(4)
-            ),
-            br-5: (
-                border-right: my-border(5)
-            ),
-            br-6: (
-                border-right: my-border(6)
-            ),
-            br-7: (
-                border-right: my-border(7)
-            ),
-            br-8: (
-                border-right: my-border(8)
-            ),
-            br-9: (
-                border-right: my-border(9)
-            ),
-            br-10: (
-                border-right: my-border(10)
-            ),
-            br-11: (
-                border-right: my-border(11)
-            ),
-            br-12: (
-                border-right: my-border(12)
-            ),
-            br-13: (
-                border-right: my-border(13)
-            ),
-            br-14: (
-                border-right: my-border(14)
-            ),
-            br-15: (
-                border-right: my-border(15)
-            ),
-            br-16: (
-                border-right: my-border(16)
-            ),
-            br-17: (
-                border-right: my-border(17)
-            ),
-            br-18: (
-                border-right: my-border(18)
-            ),
-            bb-0: (
-                border-bottom: my-border(0)
-            ),
-            bb-1: (
-                border-bottom: my-border(1)
-            ),
-            bb-2: (
-                border-bottom: my-border(2)
-            ),
-            bb-3: (
-                border-bottom: my-border(3)
-            ),
-            bb-4: (
-                border-bottom: my-border(4)
-            ),
-            bb-5: (
-                border-bottom: my-border(5)
-            ),
-            bb-6: (
-                border-bottom: my-border(6)
-            ),
-            bb-7: (
-                border-bottom: my-border(7)
-            ),
-            bb-8: (
-                border-bottom: my-border(8)
-            ),
-            bb-9: (
-                border-bottom: my-border(9)
-            ),
-            bb-10: (
-                border-bottom: my-border(10)
-            ),
-            bb-11: (
-                border-bottom: my-border(11)
-            ),
-            bb-12: (
-                border-bottom: my-border(12)
-            ),
-            bb-13: (
-                border-bottom: my-border(13)
-            ),
-            bb-14: (
-                border-bottom: my-border(14)
-            ),
-            bb-15: (
-                border-bottom: my-border(15)
-            ),
-            bb-16: (
-                border-bottom: my-border(16)
-            ),
-            bb-17: (
-                border-bottom: my-border(17)
-            ),
-            bb-18: (
-                border-bottom: my-border(18)
-            ),
-            bl-0: (
-                border-left: my-border(0)
-            ),
-            bl-1: (
-                border-left: my-border(1)
-            ),
-            bl-2: (
-                border-left: my-border(2)
-            ),
-            bl-3: (
-                border-left: my-border(3)
-            ),
-            bl-4: (
-                border-left: my-border(4)
-            ),
-            bl-5: (
-                border-left: my-border(5)
-            ),
-            bl-6: (
-                border-left: my-border(6)
-            ),
-            bl-7: (
-                border-left: my-border(7)
-            ),
-            bl-8: (
-                border-left: my-border(8)
-            ),
-            bl-9: (
-                border-left: my-border(9)
-            ),
-            bl-10: (
-                border-left: my-border(10)
-            ),
-            bl-11: (
-                border-left: my-border(11)
-            ),
-            bl-12: (
-                border-left: my-border(12)
-            ),
-            bl-13: (
-                border-left: my-border(13)
-            ),
-            bl-14: (
-                border-left: my-border(14)
-            ),
-            bl-15: (
-                border-left: my-border(15)
-            ),
-            bl-16: (
-                border-left: my-border(16)
-            ),
-            bl-17: (
-                border-left: my-border(17)
-            ),
-            bl-18: (
-                border-left: my-border(18)
             ),
             brad-0: (
                 border-radius: my-border-radius(0)
