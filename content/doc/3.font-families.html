@@ -4,10 +4,25 @@ description: Design tokens  des fontes
 layout: libdoc/page-codemirror
 category: Design tokens
 order: 130
+briks_font_families:
+    - "lead-700"
+    - "lead-600"
+    - "lead-400"
+    - "mono"
 ---
-<div class="c-dim m-mt-10 m-m-auto" style="max-width: 40ch">
-    <h1 class="c-txt m-ff-lead-700">Sora Bold</h1>
-    <p class="c-txt m-ff-lead-600">Sora SemiBold. Ipsum sed clita labore diam ut no ipsum est. Gubergren accusam et duo sed sadipscing et tempor elitr, dolore diam.</p>
-    <p class="c-txt m-ff-lead-400">Sora Regular. Erat dolore et dolore magna et. Gubergren dolore voluptua erat diam. Voluptua sit labore lorem sea kasd accusam. Lorem amet.</p>
-    <p class="c-txt m-ff-mono">Espacement fixe. Et aliquyam kasd labore vero vero amet magna sed, nonumy labore sed sed dolor et sanctus amet. Sit clita sea.</p>
+<div class="
+    briks-font-families
+    c-dim m-mt-10 m-m-auto" 
+    style="max-width: 50ch">
+    {% for name in page.briks_font_families %}
+    <p class="
+        c-txt m-ff-{{name}}
+        c-dim m-mb-14">
+        <span class="c-txt m-ff-mono m-fs-4" style="font-weight: normal"></span><br>
+        <code class="c-txt m-fs-4" style="font-weight: normal">var(--ita-font-family-{{name}})</code><br><br>
+        Erat dolore et dolore magna et. 
+        Gubergren dolore voluptua erat diam. 
+        Voluptua sit labore lorem sea kasd accusam. 
+        Lorem amet.<br>
+    </p>{% endfor %}
 </div>

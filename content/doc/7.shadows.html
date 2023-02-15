@@ -6,12 +6,16 @@ category: Design tokens
 order: 180
 ---
 <div class="
+    briks-shadows
     c-dim m-p-10
     c-txt m-ff-lead-400">
     {% for i in (0..3) %}
     <div class="
-        c-skin m-bc-neutral-100 m-bs-{{i}}
-        c-dim m-p-6 m-mb-10">
-        Élévation {{i}}
+        c-skin m-bs-{{i}} m-bc-neutral-100
+        c-dim m-p-6 m-mb-10
+        c-txt m-ff-mono">
+        Élévation {{i}} <br>
+        var(--ita-shadow-{{i}}) <br>
+        <span></span>
     </div>{% endfor %}
 </div>
