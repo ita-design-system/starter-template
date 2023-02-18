@@ -229,7 +229,6 @@ classDiagram
         z-index
     }
     class c_txt {
-        display: -webkit-box
         font-family
         font-size
         font-style
@@ -243,8 +242,6 @@ classDiagram
         vertical-align
         white-space
         word-break
-        -webkit-box-orient
-        -webkit-line-clamp
     }
     class c_skin {
         background
