@@ -1032,6 +1032,9 @@ Abréviations désignant les propriété CSS.
 | padding-left | `pl-` | `c-dim m-pl-` | `u-pl-` |
 | pointer-events | `pe-` | `c-skin m-pe-` | `u-pe-` |
 | right | `right-` | `c-pos m-right-` | `u-right-` |
+| scroll-behavior | `scrollb-` | `c-dim m-scrolb-` | `u-scrollb-` |
+| scroll-snap-align | `scrollsa-` | `c-dim m-scrollsa-` | `u-scrollsa-` |
+| scroll-snap-type | `scrollst-` | `c-dim m-scrollst-` | `u-scrollst-` |
 | text-align | `ta-` | `c-txt m-ta-` | `u-ta-` |
 | text-decoration | `td-` | `c-txt m-td-` | `u-td-` |
 | text-transform | `tt-` | `c-txt m-tt-` | `u-tt-` |
