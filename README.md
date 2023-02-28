@@ -969,6 +969,15 @@ Abréviations désignant les propriété CSS.
 
 | Propriété CSS | Abréviation | Composant / modifieur associé | Utilitaire associé |
 |:-|:-|:-|:-|
+| animation | `anim-` | `c-skin m-anim-` | `u-anim-` |
+| animation-delay | `animdel-` | `c-skin m-animdel-` | `u-animdel-` |
+| animation-direction | `animdir-` | `c-skin m-animdir-` | `u-animdir-` |
+| animation-duration | `animdur-` | `c-skin m-animdur-` | `u-animdur-` |
+| animation-fill-mode | `animfm-` | `c-skin m-animfm-` | `u-animfm-` |
+| animation-iteration-count | `animic-` | `c-skin m-animic-` | `u-animic-` |
+| animation-name | `animn` | `c-skin m-animn` | `u-animn` |
+| animation-play-state | `animps-` | `c-skin m-animps-` | `u-animps-` |
+| animation-timing-function | `animtf-` | `c-skin m-animtf-` | `u-animtf-` |
 | aspect-ratio | `ar-` | `c-dim m-ar-` | `u-ar-` |
 | background | `bg-` | `c-skin m-bg-` | `u-bg-` |
 | background-color | `bc-` | `c-skin m-bc-` | `u-bc-` |
