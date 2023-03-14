@@ -160,7 +160,6 @@ classDiagram
         font_families
         font_sizes
         spacings
-        borders
         border_radius
         shadows
     }
@@ -192,334 +191,6 @@ La méthodologie utilisée est une hybridation de [Atomic Design](https://bradfr
 
 ### [CSS] Composant
 
-Portée des composants sur les propriétés CSS:
-
-* **c-dis**
-    * align-items
-    * backface-visibility
-    * clear
-    * display
-    * justify-content
-    * flex
-    * flex-basis
-    * flex-direction
-    * flex-flow
-    * flex-shrink
-    * flex-wrap
-    * float
-    * gap
-    * grid-gap
-    * grid
-    * grid-area
-    * grid-auto-columns
-    * grid-auto-flow
-    * grid-auto-rows
-    * grid-column
-    * grid-column-end
-    * grid-column-start
-    * grid-row
-    * grid-row-end
-    * grid-row-start
-    * grid-template
-    * grid-template-areas
-    * grid-template-columns
-    * grid-template-rows
-    * row-gap
-    * place-content
-    * place-items
-    * place-self
-    * table-layout
-    * visibility
-    * -webkit-box-orient
-    * -webkit-line-clamp
-* **c-dim**
-    * align-self
-    * aspect-ratio
-    * box-sizing
-    * flex-grow
-    * height
-    * justify-self
-    * margin
-    * margin-block
-    * margin-block-end
-    * margin-block-start
-    * margin-bottom
-    * margin-inline
-    * margin-inline-end
-    * margin-inline-start
-    * margin-left
-    * margin-right
-    * margin-top
-    * max-block-size
-    * max-height
-    * max-inline-size
-    * max-width
-    * min-block-size
-    * min-height
-    * min-inline-size
-    * min-width
-    * object-fit
-    * object-position
-    * order
-    * overflow
-    * overflow-anchor
-    * overflow-block
-    * overflow-clip-margin
-    * overflow-inline
-    * overflow-wrap
-    * overflow-x
-    * overflow-y
-    * overscroll-behavior
-    * overscroll-behavior-block
-    * overscroll-behavior-inline
-    * overscroll-behavior-x
-    * overscroll-behavior-y
-    * padding
-    * padding-block
-    * padding-block-end
-    * padding-block-start
-    * padding-bottom
-    * padding-inline
-    * padding-inline-end
-    * padding-inline-start
-    * padding-left
-    * padding-right
-    * padding-top
-    * scroll-behavior
-    * scroll-margin
-    * scroll-margin-block
-    * scroll-margin-block-end
-    * scroll-margin-block-start
-    * scroll-margin-bottom
-    * scroll-margin-inline
-    * scroll-margin-inline-end
-    * scroll-margin-inline-start
-    * scroll-margin-left
-    * scroll-margin-right
-    * scroll-margin-top
-    * scroll-padding
-    * scroll-padding-block
-    * scroll-padding-block-end
-    * scroll-padding-block-start
-    * scroll-padding-bottom
-    * scroll-padding-inline
-    * scroll-padding-inline-end
-    * scroll-padding-inline-start
-    * scroll-padding-left
-    * scroll-padding-right
-    * scroll-padding-top
-    * scroll-snap-align
-    * scroll-snap-stop
-    * scroll-snap-type
-    * scroll-timeline
-    * scroll-timeline-axis
-    * scroll-timeline-name
-    * width
-* **c-pos**
-    * bottom
-    * left
-    * perspective
-    * perspective-origin
-    * position
-    * right
-    * top
-    * scale
-    * transform
-    * transform-box
-    * transform-origin
-    * transform-style
-    * translate
-    * z-index
-* **c-txt**
-    * column-count
-    * column-fill
-    * column-gap
-    * column-rule
-    * column-rule-color
-    * column-rule-style
-    * column-rule-width
-    * column-span
-    * column-width
-    * columns
-    * direction
-    * font
-    * font-family
-    * font-feature-settings
-    * font-kerning
-    * font-language-override
-    * font-optical-sizing
-    * font-palette
-    * font-size
-    * font-size-adjust
-    * font-stretch
-    * font-style
-    * font-synthesis
-    * font-variant
-    * font-variant-alternates
-    * font-variant-caps
-    * font-variant-east-asian
-    * font-variant-emoji
-    * font-variant-ligatures
-    * font-variant-numeric
-    * font-variant-position
-    * font-variation-settings
-    * font-weight
-    * hyphenate-character
-    * hyphenate-limit-chars
-    * hyphens
-    * letter-spacing
-    * line-break
-    * line-height
-    * text-align
-    * text-align-last
-    * text-combine-upright
-    * text-decoration
-    * text-decoration-color
-    * text-decoration-line
-    * text-decoration-skip
-    * text-decoration-skip-ink
-    * text-decoration-style
-    * text-decoration-thickness
-    * text-emphasis
-    * text-emphasis-color
-    * text-emphasis-position
-    * text-emphasis-style
-    * text-indent
-    * text-justify
-    * text-orientation
-    * text-overflow
-    * text-rendering
-    * text-shadow
-    * text-size-adjust
-    * text-transform
-    * text-underline-offset
-    * text-underline-position
-    * vertical-align
-    * white-space
-    * word-break
-    * word-spacing
-    * writing-mode
-    * -moz-osx-font-smoothing
-    * -webkit-font-smoothing
-* **c-skin**
-    * animation
-    * animation-delay
-    * animation-direction
-    * animation-duration
-    * animation-fill-mode
-    * animation-iteration-count
-    * animation-name
-    * animation-play-state
-    * animation-timing-function
-    * appearance
-    * backface-visibility
-    * background
-    * background-attachment
-    * background-clip
-    * background-color
-    * background-image
-    * background-origin
-    * background-position
-    * background-repeat
-    * background-size
-    * border
-    * border-bottom
-    * border-bottom-color
-    * border-bottom-left-radius
-    * border-bottom-right-radius
-    * border-bottom-style
-    * border-bottom-width
-    * border-collapse
-    * border-color
-    * border-image
-    * border-image-outset
-    * border-image-repeat
-    * border-image-slice
-    * border-image-source
-    * border-image-width
-    * border-left
-    * border-left-color
-    * border-left-style
-    * border-left-width
-    * border-radius
-    * border-right
-    * border-right-color
-    * border-right-style
-    * border-right-width
-    * border-spacing
-    * border-style
-    * border-top
-    * border-top-color
-    * border-top-left-radius
-    * border-top-right-radius
-    * border-top-style
-    * border-top-width
-    * border-width
-    * box-shadow
-    * caption-side
-    * color
-    * counter-increment
-    * counter-reset
-    * cursor
-    * filter
-    * list-style
-    * list-style-image
-    * list-style-position
-    * list-style-type
-    * mask
-    * mask-border
-    * mask-border-mode
-    * mask-border-outset
-    * mask-border-repeat
-    * mask-border-slice
-    * mask-border-source
-    * mask-border-width
-    * mask-clip
-    * mask-composite
-    * mask-image
-    * mask-mode
-    * mask-origin
-    * mask-position
-    * mask-repeat
-    * mask-size
-    * mask-type
-    * mix-blend-mode
-    * offset
-    * offset-anchor
-    * offset-distance
-    * offset-path
-    * offset-position
-    * offset-rotate
-    * opacity
-    * outline
-    * outline-color
-    * outline-offset
-    * outline-style
-    * outline-width
-    * page-break-after
-    * page-break-before
-    * page-break-inside
-    * pointer-events
-    * print-color-adjust
-    * quotes
-    * resize
-    * scrollbar-color
-    * scrollbar-gutter
-    * scrollbar-width
-    * shape-image-threshold
-    * shape-margin
-    * shape-outside
-    * tab-size
-    * touch-action
-    * transition
-    * transition-delay
-    * transition-duration
-    * transition-property
-    * transition-timing-function
-    * user-select
-    * -webkit-appearance
-
-
 Un composant `c-` est une classe CSS qui contient zéro ou plusieurs propriétés CSS. Le composant peut affecter des [pseudo-classes](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes) et des [pseudo-éléments](https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-elements). Le nom de cette classe est composé d'un préfixe et d'un nom, souvent abrégé, qui désigne une fonctionnalité. Exemples : 
 * `c-txt` nom de la classe CSS du composant c-txt.
   * `c-` : préfixe composant.
@@ -527,6 +198,355 @@ Un composant `c-` est une classe CSS qui contient zéro ou plusieurs propriété
 * `c-skin` nom de la classe CSS du composant c-skin.
   * `c-` : préfixe composant.
   * `skin` : nom du composant dédié aux aspects et apparences.
+
+### [CSS] Scope
+
+Portée des composants sur les propriétés CSS:
+
+<details>
+    <summary><strong>Scope c-dis</strong></summary>
+    <ul>
+        <li>align-items</li>
+        <li>backface-visibility</li>
+        <li>clear</li>
+        <li>display</li>
+        <li>justify-content</li>
+        <li>flex</li>
+        <li>flex-basis</li>
+        <li>flex-direction</li>
+        <li>flex-flow</li>
+        <li>flex-shrink</li>
+        <li>flex-wrap</li>
+        <li>float</li>
+        <li>gap</li>
+        <li>grid-gap</li>
+        <li>grid</li>
+        <li>grid-area</li>
+        <li>grid-auto-columns</li>
+        <li>grid-auto-flow</li>
+        <li>grid-auto-rows</li>
+        <li>grid-column</li>
+        <li>grid-column-end</li>
+        <li>grid-column-start</li>
+        <li>grid-row</li>
+        <li>grid-row-end</li>
+        <li>grid-row-start</li>
+        <li>grid-template</li>
+        <li>grid-template-areas</li>
+        <li>grid-template-columns</li>
+        <li>grid-template-rows</li>
+        <li>row-gap</li>
+        <li>place-content</li>
+        <li>place-items</li>
+        <li>place-self</li>
+        <li>table-layout</li>
+        <li>visibility</li>
+        <li>-webkit-box-orient</li>
+        <li>-webkit-line-clamp</li>
+    </ul>
+</details>
+<details>
+    <summary><strong>Scope c-dim</strong></summary>
+    <ul>
+        <li>align-self</li>
+        <li>aspect-ratio</li>
+        <li>box-sizing</li>
+        <li>flex-grow</li>
+        <li>height</li>
+        <li>justify-self</li>
+        <li>margin</li>
+        <li>margin-block</li>
+        <li>margin-block-end</li>
+        <li>margin-block-start</li>
+        <li>margin-bottom</li>
+        <li>margin-inline</li>
+        <li>margin-inline-end</li>
+        <li>margin-inline-start</li>
+        <li>margin-left</li>
+        <li>margin-right</li>
+        <li>margin-top</li>
+        <li>max-block-size</li>
+        <li>max-height</li>
+        <li>max-inline-size</li>
+        <li>max-width</li>
+        <li>min-block-size</li>
+        <li>min-height</li>
+        <li>min-inline-size</li>
+        <li>min-width</li>
+        <li>object-fit</li>
+        <li>object-position</li>
+        <li>order</li>
+        <li>overflow</li>
+        <li>overflow-anchor</li>
+        <li>overflow-block</li>
+        <li>overflow-clip-margin</li>
+        <li>overflow-inline</li>
+        <li>overflow-wrap</li>
+        <li>overflow-x</li>
+        <li>overflow-y</li>
+        <li>overscroll-behavior</li>
+        <li>overscroll-behavior-block</li>
+        <li>overscroll-behavior-inline</li>
+        <li>overscroll-behavior-x</li>
+        <li>overscroll-behavior-y</li>
+        <li>padding</li>
+        <li>padding-block</li>
+        <li>padding-block-end</li>
+        <li>padding-block-start</li>
+        <li>padding-bottom</li>
+        <li>padding-inline</li>
+        <li>padding-inline-end</li>
+        <li>padding-inline-start</li>
+        <li>padding-left</li>
+        <li>padding-right</li>
+        <li>padding-top</li>
+        <li>scroll-behavior</li>
+        <li>scroll-margin</li>
+        <li>scroll-margin-block</li>
+        <li>scroll-margin-block-end</li>
+        <li>scroll-margin-block-start</li>
+        <li>scroll-margin-bottom</li>
+        <li>scroll-margin-inline</li>
+        <li>scroll-margin-inline-end</li>
+        <li>scroll-margin-inline-start</li>
+        <li>scroll-margin-left</li>
+        <li>scroll-margin-right</li>
+        <li>scroll-margin-top</li>
+        <li>scroll-padding</li>
+        <li>scroll-padding-block</li>
+        <li>scroll-padding-block-end</li>
+        <li>scroll-padding-block-start</li>
+        <li>scroll-padding-bottom</li>
+        <li>scroll-padding-inline</li>
+        <li>scroll-padding-inline-end</li>
+        <li>scroll-padding-inline-start</li>
+        <li>scroll-padding-left</li>
+        <li>scroll-padding-right</li>
+        <li>scroll-padding-top</li>
+        <li>scroll-snap-align</li>
+        <li>scroll-snap-stop</li>
+        <li>scroll-snap-type</li>
+        <li>scroll-timeline</li>
+        <li>scroll-timeline-axis</li>
+        <li>scroll-timeline-name</li>
+        <li>width</li>
+    </ul>
+</details>
+<details>
+    <summary><strong>Scope c-pos</strong></summary>
+    <ul>
+        <li>bottom</li>
+        <li>left</li>
+        <li>perspective</li>
+        <li>perspective-origin</li>
+        <li>position</li>
+        <li>right</li>
+        <li>top</li>
+        <li>scale</li>
+        <li>transform</li>
+        <li>transform-box</li>
+        <li>transform-origin</li>
+        <li>transform-style</li>
+        <li>translate</li>
+        <li>z-index</li>
+    </ul>
+</details>
+<details>
+    <summary><strong>Scope c-txt</strong></summary>
+    <ul>
+        <li>column-count</li>
+        <li>column-fill</li>
+        <li>column-gap</li>
+        <li>column-rule</li>
+        <li>column-rule-color</li>
+        <li>column-rule-style</li>
+        <li>column-rule-width</li>
+        <li>column-span</li>
+        <li>column-width</li>
+        <li>columns</li>
+        <li>direction</li>
+        <li>font</li>
+        <li>font-family</li>
+        <li>font-feature-settings</li>
+        <li>font-kerning</li>
+        <li>font-language-override</li>
+        <li>font-optical-sizing</li>
+        <li>font-palette</li>
+        <li>font-size</li>
+        <li>font-size-adjust</li>
+        <li>font-stretch</li>
+        <li>font-style</li>
+        <li>font-synthesis</li>
+        <li>font-variant</li>
+        <li>font-variant-alternates</li>
+        <li>font-variant-caps</li>
+        <li>font-variant-east-asian</li>
+        <li>font-variant-emoji</li>
+        <li>font-variant-ligatures</li>
+        <li>font-variant-numeric</li>
+        <li>font-variant-position</li>
+        <li>font-variation-settings</li>
+        <li>font-weight</li>
+        <li>hyphenate-character</li>
+        <li>hyphenate-limit-chars</li>
+        <li>hyphens</li>
+        <li>letter-spacing</li>
+        <li>line-break</li>
+        <li>line-height</li>
+        <li>text-align</li>
+        <li>text-align-last</li>
+        <li>text-combine-upright</li>
+        <li>text-decoration</li>
+        <li>text-decoration-color</li>
+        <li>text-decoration-line</li>
+        <li>text-decoration-skip</li>
+        <li>text-decoration-skip-ink</li>
+        <li>text-decoration-style</li>
+        <li>text-decoration-thickness</li>
+        <li>text-emphasis</li>
+        <li>text-emphasis-color</li>
+        <li>text-emphasis-position</li>
+        <li>text-emphasis-style</li>
+        <li>text-indent</li>
+        <li>text-justify</li>
+        <li>text-orientation</li>
+        <li>text-overflow</li>
+        <li>text-rendering</li>
+        <li>text-shadow</li>
+        <li>text-size-adjust</li>
+        <li>text-transform</li>
+        <li>text-underline-offset</li>
+        <li>text-underline-position</li>
+        <li>vertical-align</li>
+        <li>white-space</li>
+        <li>word-break</li>
+        <li>word-spacing</li>
+        <li>writing-mode</li>
+        <li>-moz-osx-font-smoothing</li>
+        <li>-webkit-font-smoothing</li>
+    </ul>
+</details>
+<details>
+    <summary><strong>Scope c-skin</strong></summary>
+    <ul>
+        <li>animation</li>
+        <li>animation-delay</li>
+        <li>animation-direction</li>
+        <li>animation-duration</li>
+        <li>animation-fill-mode</li>
+        <li>animation-iteration-count</li>
+        <li>animation-name</li>
+        <li>animation-play-state</li>
+        <li>animation-timing-function</li>
+        <li>appearance</li>
+        <li>backface-visibility</li>
+        <li>background</li>
+        <li>background-attachment</li>
+        <li>background-clip</li>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-origin</li>
+        <li>background-position</li>
+        <li>background-repeat</li>
+        <li>background-size</li>
+        <li>border</li>
+        <li>border-bottom</li>
+        <li>border-bottom-color</li>
+        <li>border-bottom-left-radius</li>
+        <li>border-bottom-right-radius</li>
+        <li>border-bottom-style</li>
+        <li>border-bottom-width</li>
+        <li>border-collapse</li>
+        <li>border-color</li>
+        <li>border-image</li>
+        <li>border-image-outset</li>
+        <li>border-image-repeat</li>
+        <li>border-image-slice</li>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-left</li>
+        <li>border-left-color</li>
+        <li>border-left-style</li>
+        <li>border-left-width</li>
+        <li>border-radius</li>
+        <li>border-right</li>
+        <li>border-right-color</li>
+        <li>border-right-style</li>
+        <li>border-right-width</li>
+        <li>border-spacing</li>
+        <li>border-style</li>
+        <li>border-top</li>
+        <li>border-top-color</li>
+        <li>border-top-left-radius</li>
+        <li>border-top-right-radius</li>
+        <li>border-top-style</li>
+        <li>border-top-width</li>
+        <li>border-width</li>
+        <li>box-shadow</li>
+        <li>caption-side</li>
+        <li>color</li>
+        <li>counter-increment</li>
+        <li>counter-reset</li>
+        <li>cursor</li>
+        <li>filter</li>
+        <li>list-style</li>
+        <li>list-style-image</li>
+        <li>list-style-position</li>
+        <li>list-style-type</li>
+        <li>mask</li>
+        <li>mask-border</li>
+        <li>mask-border-mode</li>
+        <li>mask-border-outset</li>
+        <li>mask-border-repeat</li>
+        <li>mask-border-slice</li>
+        <li>mask-border-source</li>
+        <li>mask-border-width</li>
+        <li>mask-clip</li>
+        <li>mask-composite</li>
+        <li>mask-image</li>
+        <li>mask-mode</li>
+        <li>mask-origin</li>
+        <li>mask-position</li>
+        <li>mask-repeat</li>
+        <li>mask-size</li>
+        <li>mask-type</li>
+        <li>mix-blend-mode</li>
+        <li>offset</li>
+        <li>offset-anchor</li>
+        <li>offset-distance</li>
+        <li>offset-path</li>
+        <li>offset-position</li>
+        <li>offset-rotate</li>
+        <li>opacity</li>
+        <li>outline</li>
+        <li>outline-color</li>
+        <li>outline-offset</li>
+        <li>outline-style</li>
+        <li>outline-width</li>
+        <li>page-break-after</li>
+        <li>page-break-before</li>
+        <li>page-break-inside</li>
+        <li>pointer-events</li>
+        <li>print-color-adjust</li>
+        <li>quotes</li>
+        <li>resize</li>
+        <li>scrollbar-color</li>
+        <li>scrollbar-gutter</li>
+        <li>scrollbar-width</li>
+        <li>shape-image-threshold</li>
+        <li>shape-margin</li>
+        <li>shape-outside</li>
+        <li>tab-size</li>
+        <li>touch-action</li>
+        <li>transition</li>
+        <li>transition-delay</li>
+        <li>transition-duration</li>
+        <li>transition-property</li>
+        <li>transition-timing-function</li>
+        <li>user-select</li>
+        <li>-webkit-appearance</li>
+    </ul>
+</details>
 
 ### [CSS] Modifieur
 
