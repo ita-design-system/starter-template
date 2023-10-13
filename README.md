@@ -985,6 +985,8 @@ La convention de désignation est la suivante:
         * `c-` désigne la propriété `color`.
         * `primary-500` désigne le design token couleur "primary-500" sur lequel est assignée une couleur.
 
+## [DEV] Tableau des abréviations modifieurs
+
 Abréviations désignant les propriété CSS.
 
 | Propriété CSS | Abréviation | Composant / modifieur associé | Utilitaire associé |
