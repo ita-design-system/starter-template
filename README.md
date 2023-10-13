@@ -987,7 +987,7 @@ La convention de désignation est la suivante:
 
 ## [DEV] Tableau des abréviations modifieurs
 
-Abréviations désignant les propriété CSS.
+Abréviations désignant les propriétés CSS.
 
 | Propriété CSS | Abréviation | Composant / modifieur associé | Utilitaire associé |
 |:-|:-|:-|:-|
