@@ -1069,6 +1069,7 @@ Abréviations désignant les propriétés CSS.
 | text-align | `ta-` | `c-txt m-ta-` | `u-ta-` |
 | text-decoration | `td-` | `c-txt m-td-` | `u-td-` |
 | text-transform | `tt-` | `c-txt m-tt-` | `u-tt-` |
+| transform | `t-` | `c-pos m-t-` | `u-t-` |
 | transition | `transition-` | `c-skin m-transition-` | `u-transition-` |
 | top | `top-` | `c-pos m-top-` | `u-top-` |
 | vertical-align | `va-` | `c-txt m-va-` | `u-va-` |
